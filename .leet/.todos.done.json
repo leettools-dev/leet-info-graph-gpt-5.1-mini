@@ -19,6 +19,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": "main#feature#frontend-ui"
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#chat_ui"
     }
   ]
 }

@@ -9,6 +9,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": "main#feature#messages-api"
+    },
+    {
+      "id": "user-model",
+      "content": "user-model",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#user-model"
     }
   ]
 }

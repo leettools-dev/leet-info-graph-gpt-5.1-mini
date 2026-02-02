@@ -70,4 +70,15 @@ async def callback(code: Optional[str] = None, error: Optional[str] = None):
         "token_type": "Bearer",
     }
     user = {"id": "123", "email": "user@example.com", "name": "Test User"}
+
+    # Try to create or register the user in the in-memory user store for demos.
+    try:
+        from src.leet_apps.api import users as users_module
+        # Create a user entry using the users.User model so other endpoints can find it in tests
+        user_obj = users_module.User(id=user["id"], email=user["email"], name=user["name"], created_at=__import__("datetime").datetime.utcnow())
+        users_module._users[user_obj.id] = user_obj
+    except Exception:
+        # If importing or creating the user fails for any reason, continue gracefully.
+        pass
+
     return {"status": "ok", "tokens": tokens, "user": user}

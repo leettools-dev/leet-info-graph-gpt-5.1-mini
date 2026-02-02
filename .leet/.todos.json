@@ -124,6 +124,7 @@
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "in_progress",
+<<<<<<< Updated upstream
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -134,11 +135,13 @@
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
+=======
+>>>>>>> Stashed changes
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
+      "branch": "main#feature#gmail-oauth"
     },
     {
       "id": "f4-generate-infographic-title-key-stats-bullets-charts-references",

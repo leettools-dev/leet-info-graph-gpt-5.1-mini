@@ -1,6 +1,16 @@
 {
   "todos": [
     {
+      "id": "purpose",
+      "content": "Purpose",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "scope",
       "content": "Scope",
       "status": "pending",
@@ -111,19 +121,24 @@
       "branch": null
     },
     {
-<<<<<<< Updated upstream
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
-=======
-      "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
-      "content": "F3: Web search pipeline to collect sources; show source list",
->>>>>>> Stashed changes
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": "main#feature#gmail-oauth"
+      "branch": null
+    },
+    {
+      "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
+      "content": "F3: Web search pipeline to collect sources; show source list",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
     },
     {
       "id": "f4-generate-infographic-title-key-stats-bullets-charts-references",
@@ -138,7 +153,7 @@
     {
       "id": "f5-save-each-research-session-with-prompt-sources-and-infographic",
       "content": "F5: Save each research session with prompt, sources, and infographic",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -238,7 +253,7 @@
     {
       "id": "frontend-spa-chat-history-detail-pages",
       "content": "Frontend: SPA (chat, history, detail pages)",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -348,7 +363,7 @@
     {
       "id": "message-id-session-id-role-content-created-at",
       "content": "Message: id, session_id, role, content, created_at",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -378,7 +393,7 @@
     {
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -538,7 +553,7 @@
     {
       "id": "implement-search-ingest-and-caching-strategy",
       "content": "Implement search ingest and caching strategy",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -584,6 +599,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+    },
+    {
+      "id": "user-model",
+      "content": "user-model",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#user-model"
     }
   ]
 }

@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "scope",
-      "content": "Scope",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -243,7 +233,7 @@
     {
       "id": "frontend-spa-chat-history-detail-pages",
       "content": "Frontend: SPA (chat, history, detail pages)",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -253,7 +243,7 @@
     {
       "id": "backend-api-auth-session-crud-job-orchestration",
       "content": "Backend API: auth, session CRUD, job orchestration",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -374,6 +364,16 @@
       "id": "implementation-plan",
       "content": "Implementation Plan",
       "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
+      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -574,16 +574,6 @@
       "id": "browse-past-sessions-in-history",
       "content": "Browse past sessions in History",
       "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
-      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

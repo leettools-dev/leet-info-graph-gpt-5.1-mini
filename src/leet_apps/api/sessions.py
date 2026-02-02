@@ -1,7 +1,7 @@
 import uuid
 from datetime import datetime
 from typing import Optional, List, Dict, Any
-from fastapi import APIRouter, HTTPException, Body
+from fastapi import APIRouter, HTTPException, Body, Query
 from pydantic import BaseModel, Field
 
 router = APIRouter(prefix="/api/sessions")
@@ -133,3 +133,50 @@ async def get_infographic_for_session(session_id: str):
     if not infographic:
         raise HTTPException(status_code=404, detail="Infographic not found")
     return infographic
+
+
+@router.get("/{session_id}/export")
+async def export_session(session_id: str):
+    """
+    Export the full session data as JSON, including session record, messages, sources and infographic metadata.
+    """
+    session = _sessions.get(session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    # Gather messages from messages module if available
+    messages = []
+    try:
+        from src.leet_apps.api import messages as messages_module
+        msgs = [m for m in messages_module._messages.values() if m.session_id == session_id]
+        # sort by created_at
+        msgs.sort(key=lambda m: m.created_at)
+        messages = [m.dict() for m in msgs]
+    except Exception:
+        messages = []
+
+    sources = _sources.get(session_id, [])
+    infographic = _infographics.get(session_id)
+
+    return {
+        "session": session.dict() if hasattr(session, "dict") else session,
+        "messages": messages,
+        "sources": sources,
+        "infographic": infographic,
+    }
+
+
+@router.get("/{session_id}/export/infographic")
+async def export_infographic(session_id: str, format: str = Query("png", regex="^(png|svg)$")):
+    """
+    Export the infographic image. For demo purposes this returns the image URL and requested format.
+    In a real implementation this would stream the image bytes with appropriate content-type.
+    """
+    session = _sessions.get(session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+    infographic = _infographics.get(session_id)
+    if not infographic:
+        raise HTTPException(status_code=404, detail="Infographic not found")
+
+    return {"image_url": infographic["image_url"], "format": format}

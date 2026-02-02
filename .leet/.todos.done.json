@@ -11,8 +11,13 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
+=======
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+>>>>>>> Stashed changes
       "status": "completed",
       "background": null,
       "dependencies": [],

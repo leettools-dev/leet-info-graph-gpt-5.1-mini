@@ -111,14 +111,19 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
+=======
+      "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
+      "content": "F3: Web search pipeline to collect sources; show source list",
+>>>>>>> Stashed changes
       "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
+      "branch": "main#feature#gmail-oauth"
     },
     {
       "id": "f4-generate-infographic-title-key-stats-bullets-charts-references",
@@ -533,7 +538,7 @@
     {
       "id": "implement-search-ingest-and-caching-strategy",
       "content": "Implement search ingest and caching strategy",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

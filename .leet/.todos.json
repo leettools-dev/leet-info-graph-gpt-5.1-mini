@@ -1,6 +1,16 @@
 {
   "todos": [
     {
+      "id": "purpose",
+      "content": "Purpose",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "scope",
       "content": "Scope",
       "status": "pending",
@@ -103,7 +113,7 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -113,6 +123,16 @@
     {
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
+      "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -373,7 +393,7 @@
     {
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -581,14 +601,14 @@
       "branch": null
     },
     {
-      "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
-      "content": "F3: Web search pipeline to collect sources; show source list",
+      "id": "user-model",
+      "content": "user-model",
       "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
+      "branch": "main#feature#user-model"
     }
   ]
 }

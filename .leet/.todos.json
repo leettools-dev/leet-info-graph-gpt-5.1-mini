@@ -1,6 +1,16 @@
 {
   "todos": [
     {
+      "id": "scope",
+      "content": "Scope",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -93,7 +103,7 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -313,7 +323,7 @@
     {
       "id": "researchsession-id-user-id-prompt-status-created-at",
       "content": "ResearchSession: id, user_id, prompt, status, created_at",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -371,10 +381,9 @@
       "branch": null
     },
     {
-<<<<<<< Updated upstream
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -382,8 +391,6 @@
       "branch": null
     },
     {
-=======
->>>>>>> Stashed changes
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
       "content": "Phase 2: Infographic generation MVP (static template + charts), session save",
       "status": "pending",
@@ -582,19 +589,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-<<<<<<< Updated upstream
-=======
-    },
-    {
-      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
-      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
->>>>>>> Stashed changes
     }
   ]
 }

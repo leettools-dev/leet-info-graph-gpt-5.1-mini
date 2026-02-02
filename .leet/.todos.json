@@ -101,6 +101,7 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
       "status": "in_progress",
@@ -111,6 +112,8 @@
       "branch": "main#feature#researchsession_crud"
     },
     {
+=======
+>>>>>>> Stashed changes
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "pending",
@@ -589,6 +592,19 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "id": "f1-gmail-oauth-login-and-account-management",
+      "content": "F1: Gmail OAuth login and account management",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+>>>>>>> Stashed changes
     }
   ]
 }

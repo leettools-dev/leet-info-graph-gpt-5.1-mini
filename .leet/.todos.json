@@ -3,12 +3,12 @@
     {
       "id": "purpose",
       "content": "Purpose",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
+      "branch": "main#feature#phase1_oauth_and_chat"
     },
     {
       "id": "scope",
@@ -241,16 +241,6 @@
       "branch": null
     },
     {
-      "id": "frontend-spa-chat-history-detail-pages",
-      "content": "Frontend: SPA (chat, history, detail pages)",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": "main#feature#frontend-spa-chat-ui"
-    },
-    {
       "id": "backend-api-auth-session-crud-job-orchestration",
       "content": "Backend API: auth, session CRUD, job orchestration",
       "status": "pending",
@@ -373,16 +363,6 @@
     {
       "id": "implementation-plan",
       "content": "Implementation Plan",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
-      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -584,6 +564,16 @@
       "id": "browse-past-sessions-in-history",
       "content": "Browse past sessions in History",
       "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
+      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

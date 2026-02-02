@@ -29,6 +29,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": "main#feature#chat_ui"
+    },
+    {
+      "id": "frontend-spa-chat-history-detail-pages",
+      "content": "Frontend: SPA (chat, history, detail pages)",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#frontend-spa-chat-ui"
     }
   ]
 }

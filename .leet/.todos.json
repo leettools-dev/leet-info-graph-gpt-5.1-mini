@@ -121,16 +121,6 @@
       "branch": null
     },
     {
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": "main#feature#chat_ui"
-    },
-    {
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
@@ -249,6 +239,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+    },
+    {
+      "id": "frontend-spa-chat-history-detail-pages",
+      "content": "Frontend: SPA (chat, history, detail pages)",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#frontend-spa-chat-ui"
     },
     {
       "id": "backend-api-auth-session-crud-job-orchestration",
@@ -584,16 +584,6 @@
       "id": "browse-past-sessions-in-history",
       "content": "Browse past sessions in History",
       "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "frontend-spa-chat-history-detail-pages",
-      "content": "Frontend: SPA (chat, history, detail pages)",
-      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

@@ -121,24 +121,27 @@
       "branch": null
     },
     {
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
-      "status": "pending",
+      "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
+      "content": "F3: Web search pipeline to collect sources; show source list",
+      "status": "in_progress",
+<<<<<<< Updated upstream
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
+      "branch": "main#feature#gmail-oauth"
     },
     {
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
+=======
+>>>>>>> Stashed changes
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
+      "branch": "main#feature#gmail-oauth"
     },
     {
       "id": "f4-generate-infographic-title-key-stats-bullets-charts-references",
@@ -553,7 +556,7 @@
     {
       "id": "implement-search-ingest-and-caching-strategy",
       "content": "Implement search ingest and caching strategy",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -599,16 +602,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-    },
-    {
-      "id": "user-model",
-      "content": "user-model",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": "main#feature#user-model"
     }
   ]
 }

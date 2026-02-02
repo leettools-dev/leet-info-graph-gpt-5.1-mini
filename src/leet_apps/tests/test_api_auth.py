@@ -14,7 +14,7 @@ def test_health_ok():
     assert res.status_code == 200
     assert res.json() == {"status": "ok"}
 
-def test_login_not_implemented():
+def test_login_requires_client_id():
     res = client.post("/api/auth/login")
-    assert res.status_code == 501
-    assert res.json()["detail"] == "Not implemented"
+    assert res.status_code == 400
+    assert "Missing configuration" in res.json()["detail"]

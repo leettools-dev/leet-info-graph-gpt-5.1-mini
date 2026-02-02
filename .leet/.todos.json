@@ -128,7 +128,7 @@
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
+      "branch": "main#feature#chat_ui"
     },
     {
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
@@ -244,16 +244,6 @@
       "id": "architecture",
       "content": "Architecture",
       "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "frontend-spa-chat-history-detail-pages",
-      "content": "Frontend: SPA (chat, history, detail pages)",
-      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -601,14 +591,14 @@
       "branch": null
     },
     {
-      "id": "frontend-ui",
-      "content": "frontend-ui",
+      "id": "frontend-spa-chat-history-detail-pages",
+      "content": "Frontend: SPA (chat, history, detail pages)",
       "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": "main#feature#frontend-ui"
+      "branch": null
     }
   ]
 }

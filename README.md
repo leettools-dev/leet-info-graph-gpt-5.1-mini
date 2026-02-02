@@ -28,7 +28,13 @@ Usage example:
 
 ### Prerequisites
 
-*Prerequisites will be documented here.*
+Environment variables required for OAuth and local development:
+
+- GOOGLE_OAUTH_CLIENT_ID: OAuth client ID from Google Cloud Console.
+- GOOGLE_OAUTH_CLIENT_SECRET: OAuth client secret (optional for local development; if set, auth callback will simulate a token exchange).
+- GOOGLE_OAUTH_REDIRECT_URI: Redirect URI configured for the OAuth client (defaults to http://localhost:8000/api/auth/callback).
+
+Note: Do NOT commit secrets to the repository. Use a secrets manager or environment variables in CI/CD.
 
 ### Installation
 

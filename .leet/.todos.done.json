@@ -8,17 +8,29 @@
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
+<<<<<<< Updated upstream
       "branch": "main#feature#messages-api"
     },
     {
       "id": "user-model",
       "content": "user-model",
+=======
+      "branch": null
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+>>>>>>> Stashed changes
       "status": "completed",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
+<<<<<<< Updated upstream
       "branch": "main#feature#user-model"
+=======
+      "branch": null
+>>>>>>> Stashed changes
     }
   ]
 }

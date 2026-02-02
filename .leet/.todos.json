@@ -103,7 +103,7 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -113,7 +113,7 @@
     {
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -133,7 +133,7 @@
     {
       "id": "f5-save-each-research-session-with-prompt-sources-and-infographic",
       "content": "F5: Save each research session with prompt, sources, and infographic",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -233,7 +233,7 @@
     {
       "id": "frontend-spa-chat-history-detail-pages",
       "content": "Frontend: SPA (chat, history, detail pages)",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -343,7 +343,7 @@
     {
       "id": "message-id-session-id-role-content-created-at",
       "content": "Message: id, session_id, role, content, created_at",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -574,16 +574,6 @@
       "id": "browse-past-sessions-in-history",
       "content": "Browse past sessions in History",
       "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
-      "content": "F3: Web search pipeline to collect sources; show source list",
-      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

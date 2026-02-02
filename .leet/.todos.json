@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "purpose",
-      "content": "Purpose",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "scope",
       "content": "Scope",
       "status": "pending",
@@ -113,7 +103,17 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
-      "status": "in_progress",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -123,25 +123,12 @@
     {
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
-      "status": "in_progress",
-<<<<<<< Updated upstream
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": "main#feature#gmail-oauth"
-    },
-    {
-      "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
-      "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
-=======
->>>>>>> Stashed changes
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": "main#feature#gmail-oauth"
+      "branch": null
     },
     {
       "id": "f4-generate-infographic-title-key-stats-bullets-charts-references",
@@ -394,16 +381,6 @@
       "branch": null
     },
     {
-      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
-      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
       "content": "Phase 2: Infographic generation MVP (static template + charts), session save",
       "status": "pending",
@@ -556,7 +533,7 @@
     {
       "id": "implement-search-ingest-and-caching-strategy",
       "content": "Implement search ingest and caching strategy",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -597,6 +574,16 @@
       "id": "browse-past-sessions-in-history",
       "content": "Browse past sessions in History",
       "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
+      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

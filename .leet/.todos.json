@@ -368,7 +368,11 @@
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
+<<<<<<< Updated upstream
       "branch": "main#feature#api-basic-crud"
+=======
+      "branch": "main#feature#frontend-spa-chat-history-detail-pages"
+>>>>>>> Stashed changes
     },
     {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
@@ -573,7 +577,11 @@
     {
       "id": "frontend-spa-chat-history-detail-pages",
       "content": "Frontend: SPA (chat, history, detail pages)",
+<<<<<<< Updated upstream
       "status": "pending",
+=======
+      "status": "in_progress",
+>>>>>>> Stashed changes
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

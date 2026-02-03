@@ -39,6 +39,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": "main#feature#frontend-spa-chat-ui"
+    },
+    {
+      "id": "purpose",
+      "content": "Purpose",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#phase1_oauth_and_chat"
     }
   ]
 }

@@ -1,11 +1,9 @@
 {
   "todos": [
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "id": "purpose",
       "content": "Purpose",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -23,10 +21,6 @@
       "branch": null
     },
     {
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -38,7 +32,7 @@
     },
     {
       "id": "output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session",
-      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \"research session\"",
+      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \u201cresearch session\u201d",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -127,11 +121,9 @@
       "branch": null
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -139,10 +131,6 @@
       "branch": null
     },
     {
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
@@ -405,32 +393,6 @@
     {
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "status": "completed",
-=======
-      "status": "in_progress",
->>>>>>> Stashed changes
-=======
-      "status": "in_progress",
->>>>>>> Stashed changes
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "branch": "main#feature#phase1-complete"
-=======
-      "branch": "main#feature#export_session_and_infographic"
->>>>>>> Stashed changes
-=======
-      "branch": "main#feature#export_session_and_infographic"
->>>>>>> Stashed changes
-    },
-    {
-      "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
-      "content": "Phase 2: Infographic generation MVP (static template + charts), session save",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -557,8 +519,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-<<<<<<< Updated upstream
-=======
     },
     {
       "id": "confirm-oauth-scope-and-ui-flows",
@@ -631,15 +591,14 @@
       "branch": null
     },
     {
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
+      "id": "phase1-complete",
+      "content": "phase1-complete",
       "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
->>>>>>> Stashed changes
+      "branch": "main#feature#phase1-complete"
     }
   ]
 }

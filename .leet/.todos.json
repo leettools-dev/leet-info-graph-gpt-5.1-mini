@@ -2,6 +2,7 @@
   "todos": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "id": "purpose",
       "content": "Purpose",
       "status": "in_progress",
@@ -22,6 +23,8 @@
       "branch": null
     },
     {
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "id": "input-natural-language-research-prompt",
@@ -125,6 +128,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "in_progress",
@@ -135,6 +139,8 @@
       "branch": null
     },
     {
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
@@ -400,7 +406,11 @@
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "status": "completed",
+=======
+      "status": "in_progress",
+>>>>>>> Stashed changes
 =======
       "status": "in_progress",
 >>>>>>> Stashed changes
@@ -409,7 +419,11 @@
       "suggested_solutions": [],
       "goal_id": null,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "branch": "main#feature#phase1-complete"
+=======
+      "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
 =======
       "branch": "main#feature#export_session_and_infographic"
 >>>>>>> Stashed changes

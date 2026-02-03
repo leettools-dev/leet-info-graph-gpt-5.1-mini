@@ -4,15 +4,75 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Infograph Assistant (Demo)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial; padding: 2rem; }
+    #chat { max-width: 700px; margin: 1rem 0; }
+    .message { padding: 0.5rem; border-radius: 6px; margin-bottom: 0.5rem; }
+    .message.user { background: #e6f4ff; text-align: right; }
+    .message.assistant { background: #f1f1f1; text-align: left; }
+    #input-row { display:flex; gap:0.5rem; }
+    input[type=text] { flex:1; padding:0.5rem; }
+  </style>
 </head>
 <body>
   <div id="app">
     <h1>Infograph Assistant (Demo)</h1>
-    <p>Use the API to create research sessions and run the mock pipeline.</p>
-    <ul>
-      <li><a href="/api/auth/health">Auth health</a></li>
-      <li><a href="/api/sessions/">Sessions API</a></li>
-    </ul>
+    <p>Use the API to create research sessions and run the mock pipeline. This demo page shows a minimal chat UI wired to the messages API.</p>
+
+    <div id="chat">
+      <div id="messages"></div>
+      <div id="input-row">
+        <input id="msginput" type="text" placeholder="Ask something like: Summarize current EV market trends" aria-label="Message input" />
+        <button id="send">Send</button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="/api/auth/health">Auth health</a></li>
+        <li><a href="/api/sessions/">Sessions API</a></li>
+      </ul>
+    </div>
   </div>
+
+  <script>
+    async function postMessage(content) {
+      const payload = { session_id: 'demo-session', role: 'user', content };
+      const res = await fetch('/api/messages/', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(payload)});
+      if (!res.ok) {
+        const t = await res.text();
+        alert('Failed to send message: ' + t);
+        return null;
+      }
+      return await res.json();
+    }
+
+    async function loadMessages() {
+      const res = await fetch('/api/messages/session/demo-session');
+      if (!res.ok) return;
+      const msgs = await res.json();
+      const container = document.getElementById('messages');
+      container.innerHTML = '';
+      msgs.forEach(m => {
+        const d = document.createElement('div');
+        d.className = 'message ' + (m.role === 'user' ? 'user' : 'assistant');
+        d.textContent = m.content;
+        container.appendChild(d);
+      });
+    }
+
+    document.getElementById('send').addEventListener('click', async () => {
+      const input = document.getElementById('msginput');
+      const v = input.value.trim();
+      if (!v) return;
+      await postMessage(v);
+      input.value = '';
+      await loadMessages();
+    });
+
+    // load initial messages
+    loadMessages();
+  </script>
 </body>
 </html>

@@ -13,16 +13,46 @@ generates an infographic, and provides...
 
 ## Features
 
-- Search: Added caching (TTL) and per-client rate limiting to the mock search endpoint (/api/search). Cache TTL is 10 minutes and rate limit default is 10 requests per 60s window. Utility endpoint to clear cache for testing is available at POST /api/search/cache/clear.
-- Auth: Gmail OAuth login endpoints (start login, callback, me, logout) implemented with placeholder and simulated-token modes for local development. Configure GOOGLE_OAUTH_CLIENT_ID and optionally GOOGLE_OAUTH_CLIENT_SECRET and GOOGLE_OAUTH_REDIRECT_URI as environment variables.
-- Sessions: ResearchSession CRUD, run pipeline (mock), sources and infographic placeholders, export endpoints.
-- Messages: Simple chat messages API used by the demo UI.
-- UI: Minimal demo chat UI and history browsing pages under src/leet_apps/ui.
+Phase 1 completed (demo):
 
-- Infographics: Added an Infographics API to generate deterministic SVG infographics from a prompt (/api/infographics/generate). Supports title, stats, bullets and a simple bar chart layout. Added endpoints to fetch infographic metadata and stream SVG image bytes (/api/infographics/{id}, /api/infographics/{id}/image).  
-- Session integration: Running a research session now invokes the infographic generator to create and attach an infographic to the session (/api/sessions/{id}/run).  
-- Export: Session export endpoints include session data, messages, sources and infographic metadata. Streaming export for infographic images is available (PNG placeholder and SVG streaming).  
-- Tests: Unit tests added for infographics generation and integration tests for sessions-run pipeline.
+- OAuth: Gmail OAuth endpoints implemented (start login, callback simulation, me/logout). Configure GOOGLE_OAUTH_CLIENT_ID and optionally GOOGLE_OAUTH_CLIENT_SECRET and GOOGLE_OAUTH_REDIRECT_URI as environment variables. For local development the callback can simulate a token exchange when GOOGLE_OAUTH_CLIENT_SECRET is set.
+- Chat UI: Minimal demo chat UI at src/leet_apps/ui/index.html wired to messages API for sending and listing messages.
+- Sessions: ResearchSession CRUD implemented with endpoints to create, list, get, update, run (runs mock pipeline), and export session data.
+- Search: Mock web search endpoint at /api/search with in-memory cache (10 minute TTL) and per-client rate limiting (10 requests per 60s). Utility endpoint to clear cache for testing: POST /api/search/cache/clear.
+- Infographics: Generate deterministic SVG infographics via /api/infographics/generate and fetch image bytes via /api/infographics/{id}/image (SVG streaming). Sessions.run invokes the generator and associates an infographic with the session.
+
+Usage examples:
+
+- Start OAuth flow (returns Google auth URL):
+  GET /api/auth/login
+
+- Simulate OAuth callback (development):
+  GET /api/auth/callback?code=abc123
+
+- Create a research session:
+  POST /api/sessions/  {"user_id":"<user-id>", "prompt":"Summarize current EV market trends"}
+
+- Run the session (mock pipeline):
+  POST /api/sessions/{session_id}/run
+
+- Fetch generated infographic metadata/image:
+  GET /api/sessions/{session_id}/infographic
+  GET /api/infographics/{infographic_id}/image?format=svg
+
+Testing:
+
+- Unit tests are provided under src/leet_apps/tests. They are written for pytest. If running locally, install test requirements (pytest, fastapi, httpx) and run:
+
+  pip install -r requirements-dev.txt
+  pytest -q src/leet_apps/tests/
+
+Configuration:
+
+- Keep secrets out of repo. Set the following environment variables for OAuth and local testing:
+  - GOOGLE_OAUTH_CLIENT_ID
+  - GOOGLE_OAUTH_CLIENT_SECRET (optional for development simulation)
+  - GOOGLE_OAUTH_REDIRECT_URI (optional; default http://localhost:8000/api/auth/callback)
+
 ## Getting Started
 
 ### Prerequisites

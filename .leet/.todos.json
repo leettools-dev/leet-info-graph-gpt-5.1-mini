@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "scope",
-      "content": "Scope",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -22,7 +12,7 @@
     },
     {
       "id": "output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session",
-      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \u201cresearch session\u201d",
+      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \"research session\"",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -103,16 +93,6 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -383,12 +363,28 @@
     {
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "status": "pending",
+=======
+      "status": "in_progress",
+>>>>>>> Stashed changes
+=======
+      "status": "in_progress",
+>>>>>>> Stashed changes
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "branch": null
+=======
+      "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
+=======
+      "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
     },
     {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
@@ -521,6 +517,16 @@
       "branch": null
     },
     {
+      "id": "confirm-oauth-scope-and-ui-flows",
+      "content": "Confirm OAuth scope and UI flows",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "define-infographic-templates-and-chart-types",
       "content": "Define infographic templates and chart types",
       "status": "pending",
@@ -552,7 +558,7 @@
     },
     {
       "id": "ask-summarize-current-ev-market-trends",
-      "content": "Ask: \u201cSummarize current EV market trends\u201d",
+      "content": "Ask: \"Summarize current EV market trends\"",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -579,16 +585,19 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+<<<<<<< Updated upstream
+=======
     },
     {
-      "id": "confirm-oauth-scope-and-ui-flows",
-      "content": "Confirm OAuth scope and UI flows",
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+>>>>>>> Stashed changes
     }
   ]
 }

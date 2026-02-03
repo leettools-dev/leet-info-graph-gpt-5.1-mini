@@ -68,3 +68,22 @@ def test_me_with_authorization_bearer_token_returns_simulated_user(monkeypatch):
     data = res.json()
     assert data["email"] == "user@example.com"
     assert data["id"] == "123"
+
+
+def test_login_returns_auth_url(monkeypatch):
+    # Set the client id so login can build an auth URL
+    monkeypatch.setenv("GOOGLE_OAUTH_CLIENT_ID", "test-client-id")
+    # Ensure redirect uri not set so default path is used
+    monkeypatch.delenv("GOOGLE_OAUTH_REDIRECT_URI", raising=False)
+
+    res = client.post("/api/auth/login")
+    assert res.status_code == 200
+    data = res.json()
+    assert "auth_url" in data
+    auth_url = data["auth_url"]
+    # Basic checks that required query params are present
+    assert "client_id=test-client-id" in auth_url
+    assert "scope=openid+email+profile" in auth_url or "scope=openid%20email%20profile" in auth_url
+    assert "response_type=code" in auth_url
+    # redirect_uri default should be present
+    assert "redirect_uri=" in auth_url

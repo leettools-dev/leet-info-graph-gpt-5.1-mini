@@ -13,18 +13,7 @@ generates an infographic, and provides...
 
 ## Features
 
-- History: sessions can be filtered by topic, date range, and tags via API parameters (topic, start_date, end_date, tags). Usage examples: GET /api/sessions?topic=ev&start_date=2026-01-01T00:00:00&end_date=2026-02-01T00:00:00&tags=market,analysis
-
-- OAuth: Gmail OAuth helper endpoints in /api/auth to start login and handle callback (simulated in local dev)
-- Sessions: create/list/update research sessions with filters (topic, date range, tags)
-- Search: mock search endpoint with in-memory cache
-- Infographic: placeholder infographic generation when running session pipeline
-- Messages: chat messages stored per session
-- UI: minimal static index.html under src/leet_apps/ui for demo
-
-- Sessions: create/list/update research sessions with filters (topic, date range, tags). API endpoints: POST /api/sessions/, GET /api/sessions/, GET /api/sessions/{id}, PUT /api/sessions/{id}, POST /api/sessions/{id}/run to execute the mock research pipeline.
-
-- Auth: Gmail OAuth helper endpoints in /api/auth to start login and handle callback (simulated in local dev). Added /api/auth/me to return current user using X-User-Id or demo token and /api/auth/logout to remove demo user.
+- UI: Minimal SPA demo page (src/leet_apps/ui/index.html) with a simple chat interface wired to /api/messages endpoints. Accessible at / (serves static index.html).
 ## Getting Started
 
 ### Prerequisites

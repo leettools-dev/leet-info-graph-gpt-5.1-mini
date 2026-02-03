@@ -13,7 +13,18 @@ generates an infographic, and provides a library to browse past infographics and
 
 ## Features
 
-- Infographics: Added a backwards-compatible helper create_from_prompt so sessions.run uses the infographics generator. This ensures sessions executed via /api/sessions/{id}/run will create and associate an infographic record using the generator (SVG) instead of the placeholder.
+- Infographic generation (MVP): POST /api/infographics/generate accepts a prompt, optional stats and bullets, and returns SVG/PNG image URLs. The generator produces a simple template with title, stats, bullets and source list. Usage example:
+
+  POST /api/infographics/generate
+  {
+    "session_id": "s1",
+    "prompt": "Summarize current EV market trends",
+    "stats": [{"label":"EV Sales", "value": 42}],
+    "bullets": ["Battery costs falling", "Charging infrastructure expanding"],
+    "sources": [{"title":"A","url":"https://a","snippet":"..."}]
+  }
+
+- Export: /api/sessions/{session_id}/export and /api/sessions/{session_id}/export/infographic provide JSON exports and image streaming (PNG/SVG placeholders for demo).
 ## Getting Started
 
 ### Prerequisites

@@ -521,6 +521,16 @@
       "branch": null
     },
     {
+      "id": "confirm-oauth-scope-and-ui-flows",
+      "content": "Confirm OAuth scope and UI flows",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "define-infographic-templates-and-chart-types",
       "content": "Define infographic templates and chart types",
       "status": "pending",
@@ -574,16 +584,6 @@
       "id": "browse-past-sessions-in-history",
       "content": "Browse past sessions in History",
       "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "confirm-oauth-scope-and-ui-flows",
-      "content": "Confirm OAuth scope and UI flows",
-      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

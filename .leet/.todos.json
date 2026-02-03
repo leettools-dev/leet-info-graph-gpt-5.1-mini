@@ -1,31 +1,5 @@
 {
   "todos": [
-<<<<<<< Updated upstream
-    {"id":"scope","content":"Scope","status":"pending"},
-    {"id":"input-natural-language-research-prompt","content":"Input: natural-language research prompt","status":"pending"},
-    {"id":"output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session","content":"Output: generated infographic (image + metadata), supporting sources, and a saved \"research session\"","status":"pending"},
-    {"id":"core-oauth-login-chat-ui-web-search-summarization-infographic-generation-history-browsing","content":"Core: OAuth login, chat UI, web search + summarization + infographic generation, history browsing","status":"pending"},
-    {"id":"f1-gmail-oauth-login-and-account-management","content":"F1: Gmail OAuth login and account management","status":"completed"},
-    {"id":"f2-chat-ui-to-submit-research-prompts-and-follow-ups","content":"F2: Chat UI to submit research prompts and follow-ups","status":"pending"},
-    {"id":"f3-web-search-pipeline-to-collect-sources-show-source-list","content":"F3: Web search pipeline to collect sources; show source list","status":"pending"},
-    {"id":"f4-generate-infographic-title-key-stats-bullets-charts-references","content":"F4: Generate infographic (title, key stats, bullets, charts, references)","status":"pending"},
-    {"id":"f5-save-each-research-session-with-prompt-sources-and-infographic","content":"F5: Save each research session with prompt, sources, and infographic","status":"pending"},
-    {"id":"f6-history-view-with-filters-topic-date-tags-and-detail-page","content":"F6: History view with filters (topic, date, tags) and detail page","status":"pending"},
-    {"id":"f7-export-infographic-png-svg-and-session-data-json","content":"F7: Export infographic (PNG/SVG) and session data (JSON)","status":"pending"},
-    {"id":"n1-rate-limit-external-calls-cache-source-fetches","content":"N1: Rate-limit external calls; cache source fetches","status":"pending"},
-    {"id":"n2-secure-oauth-and-api-secrets-no-secrets-in-repo","content":"N2: Secure OAuth and API secrets; no secrets in repo","status":"pending"},
-    {"id":"n3-traceable-provenance-source-links-per-claim","content":"N3: Traceable provenance (source links per claim)","status":"pending"},
-    {"id":"n4-responsive-ui-core-pages-render-under-2s-on-broadband","content":"N4: Responsive UI; core pages render under 2s on broadband","status":"pending"},
-    {"id":"n5-accessibility-keyboard-nav-aria-labels-contrast-checks","content":"N5: Accessibility: keyboard nav, ARIA labels, contrast checks","status":"pending"},
-    {"id":"architecture","content":"Architecture","status":"pending"},
-    {"id":"phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list","content":"Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list","status":"completed"},
-    {"id":"phase-2-infographic-generation-mvp-static-template-charts-session-save","content":"Phase 2: Infographic generation MVP (static template + charts), session save","status":"in_progress","branch":"main#feature#infographic-create-from-prompt"},
-    {"id":"phase-3-advanced-layouts-tagging-exports-improved-source-scoring","content":"Phase 3: Advanced layouts, tagging, exports, improved source scoring","status":"pending"},
-    {"id":"next-steps","content":"Next Steps","status":"pending"},
-    {"id":"confirm-oauth-scope-and-ui-flows","content":"Confirm OAuth scope and UI flows","status":"pending"},
-    {"id":"define-infographic-templates-and-chart-types","content":"Define infographic templates and chart types","status":"pending"},
-    {"id":"implement-search-ingest-and-caching-strategy","content":"Implement search ingest and caching strategy","status":"pending"}
-=======
     {
       "id": "scope",
       "content": "Scope",
@@ -129,6 +103,16 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -249,6 +233,16 @@
     {
       "id": "architecture",
       "content": "Architecture",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "frontend-spa-chat-history-detail-pages",
+      "content": "Frontend: SPA (chat, history, detail pages)",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -389,12 +383,12 @@
     {
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": "main#feature#frontend-spa-chat-history-detail-pages"
+      "branch": null
     },
     {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
@@ -547,16 +541,6 @@
       "branch": null
     },
     {
-      "id": "implement-search-ingest-and-caching-strategy",
-      "content": "Implement search ingest and caching strategy",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "sign-in-with-google",
       "content": "Sign in with Google",
       "status": "pending",
@@ -597,8 +581,8 @@
       "branch": null
     },
     {
-      "id": "frontend-spa-chat-history-detail-pages",
-      "content": "Frontend: SPA (chat, history, detail pages)",
+      "id": "implement-search-ingest-and-caching-strategy",
+      "content": "Implement search ingest and caching strategy",
       "status": "in_progress",
       "background": null,
       "dependencies": [],
@@ -606,6 +590,5 @@
       "goal_id": null,
       "branch": null
     }
->>>>>>> Stashed changes
   ]
 }

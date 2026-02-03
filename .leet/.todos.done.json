@@ -19,6 +19,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": "main#feature#phase1-complete"
+    },
+    {
+      "id": "phase-2-infographic-mvp",
+      "content": "phase-2-infographic-mvp",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
     }
   ]
 }

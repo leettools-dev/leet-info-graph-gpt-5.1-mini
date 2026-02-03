@@ -18,6 +18,11 @@ generates an infographic, and provides...
 - Sessions: ResearchSession CRUD, run pipeline (mock), sources and infographic placeholders, export endpoints.
 - Messages: Simple chat messages API used by the demo UI.
 - UI: Minimal demo chat UI and history browsing pages under src/leet_apps/ui.
+
+- Infographics: Added an Infographics API to generate deterministic SVG infographics from a prompt (/api/infographics/generate). Supports title, stats, bullets and a simple bar chart layout. Added endpoints to fetch infographic metadata and stream SVG image bytes (/api/infographics/{id}, /api/infographics/{id}/image).  
+- Session integration: Running a research session now invokes the infographic generator to create and attach an infographic to the session (/api/sessions/{id}/run).  
+- Export: Session export endpoints include session data, messages, sources and infographic metadata. Streaming export for infographic images is available (PNG placeholder and SVG streaming).  
+- Tests: Unit tests added for infographics generation and integration tests for sessions-run pipeline.
 ## Getting Started
 
 ### Prerequisites

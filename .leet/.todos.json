@@ -366,7 +366,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "status": "pending",
+=======
+      "status": "in_progress",
+>>>>>>> Stashed changes
 =======
       "status": "in_progress",
 >>>>>>> Stashed changes
@@ -383,7 +387,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "branch": null
+=======
+      "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
 =======
       "branch": "main#feature#export_session_and_infographic"
 >>>>>>> Stashed changes

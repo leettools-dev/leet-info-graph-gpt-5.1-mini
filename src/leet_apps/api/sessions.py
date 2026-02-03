@@ -138,15 +138,24 @@ async def run_research_session(session_id: str):
     # Store sources for the session
     _sources[session_id] = [dict(r) for r in results]
 
-    # Create a placeholder infographic record
-    infographic = {
-        "id": str(uuid.uuid4()),
-        "session_id": session_id,
-        "image_url": f"/static/infographics/{session_id}.png",
-        "layout_meta": {"template": "basic_v1"},
-        "created_at": datetime.utcnow(),
-    }
-    _infographics[session_id] = infographic
+    # Create a placeholder infographic record. Prefer using the infographics module if available.
+    infographic = None
+    try:
+        from src.leet_apps.api import infographics as inf_module
+        meta = await inf_module.create_from_prompt(session_id=session_id, prompt=session.prompt)
+        infographic = meta
+        # store by session id for backward compatibility
+        _infographics[session_id] = meta
+    except Exception:
+        # Fallback to the old placeholder if infographics module unavailable
+        infographic = {
+            "id": str(uuid.uuid4()),
+            "session_id": session_id,
+            "image_url": f"/static/infographics/{session_id}.png",
+            "layout_meta": {"template": "basic_v1"},
+            "created_at": datetime.utcnow(),
+        }
+        _infographics[session_id] = infographic
 
     # Update session status
     session.status = "completed"

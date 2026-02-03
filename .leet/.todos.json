@@ -1,10 +1,6 @@
 {
   "todos": [
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       "id": "purpose",
       "content": "Purpose",
       "status": "in_progress",
@@ -25,14 +21,6 @@
       "branch": null
     },
     {
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -44,7 +32,7 @@
     },
     {
       "id": "output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session",
-      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \u201cresearch session\u201d",
+      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \"research session\"",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -126,6 +114,16 @@
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
       "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -395,12 +393,12 @@
     {
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "in_progress",
+      "status": "completed",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": "main#feature#export_session_and_infographic"
+      "branch": "main#feature#phase1-complete"
     },
     {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
@@ -526,86 +524,6 @@
       "id": "next-steps",
       "content": "Next Steps",
       "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "confirm-oauth-scope-and-ui-flows",
-      "content": "Confirm OAuth scope and UI flows",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "define-infographic-templates-and-chart-types",
-      "content": "Define infographic templates and chart types",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "implement-search-ingest-and-caching-strategy",
-      "content": "Implement search ingest and caching strategy",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "sign-in-with-google",
-      "content": "Sign in with Google",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "ask-summarize-current-ev-market-trends",
-      "content": "Ask: \u201cSummarize current EV market trends\u201d",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "review-sources-infographic",
-      "content": "Review sources + infographic",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "browse-past-sessions-in-history",
-      "content": "Browse past sessions in History",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
-      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

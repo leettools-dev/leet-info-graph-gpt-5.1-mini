@@ -21,6 +21,8 @@ generates an infographic, and provides...
 - Infographic: placeholder infographic generation when running session pipeline
 - Messages: chat messages stored per session
 - UI: minimal static index.html under src/leet_apps/ui for demo
+
+- Sessions: create/list/update research sessions with filters (topic, date range, tags). API endpoints: POST /api/sessions/, GET /api/sessions/, GET /api/sessions/{id}, PUT /api/sessions/{id}, POST /api/sessions/{id}/run to execute the mock research pipeline.
 ## Getting Started
 
 ### Prerequisites

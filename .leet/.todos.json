@@ -1,3 +1,6 @@
+<<<<<<< Updated upstream
+{"todos": [{"content": "F1: Gmail OAuth login and account management","status": "in_progress","id": "f1","background": "Implement OAuth endpoints and tests","dependencies": [],"suggested_solutions": ["Add auth endpoints in src/leet_apps/api/auth.py","Add tests in src/leet_apps/tests/test_api_auth.py"],"goal_id": "goal1","branch": "main#feature#research_session_crud"},{"content": "F2: Chat UI to submit research prompts and follow-ups","status": "pending","id": "f2","background": "UI work","dependencies": ["f1"],"suggested_solutions": ["Create SPA components in src/leet_apps/ui"],"goal_id": "goal1"}]}
+=======
 {
   "todos": [
     {
@@ -11,8 +14,8 @@
       "branch": null
     },
     {
-      "id": "output-generated-infographic",
-      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \"research session\"",
+      "id": "output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session",
+      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \u201cresearch session\u201d",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -21,8 +24,68 @@
       "branch": null
     },
     {
-      "id": "core-features",
+      "id": "core-oauth-login-chat-ui-web-search-summarization-infographic-generation-history-browsing",
       "content": "Core: OAuth login, chat UI, web search + summarization + infographic generation, history browsing",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "users",
+      "content": "Users",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "students-and-educators",
+      "content": "Students and educators",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "product-market-researchers",
+      "content": "Product/market researchers",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "knowledge-workers-who-need-quick-visual-summaries",
+      "content": "Knowledge workers who need quick visual summaries",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "requirements",
+      "content": "Requirements",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "1-functional",
+      "content": "1 Functional",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -41,21 +104,7 @@
       "branch": null
     },
     {
-<<<<<<< Updated upstream
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": "feature/ui_skeleton"
-    },
-    {
-      "id": "f3-web-search-pipeline",
-=======
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
->>>>>>> Stashed changes
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
       "background": null,
@@ -65,7 +114,7 @@
       "branch": null
     },
     {
-      "id": "f4-generate-infographic",
+      "id": "f4-generate-infographic-title-key-stats-bullets-charts-references",
       "content": "F4: Generate infographic (title, key stats, bullets, charts, references)",
       "status": "pending",
       "background": null,
@@ -75,7 +124,47 @@
       "branch": null
     },
     {
-      "id": "n1-rate-limit-and-cache",
+      "id": "f5-save-each-research-session-with-prompt-sources-and-infographic",
+      "content": "F5: Save each research session with prompt, sources, and infographic",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f6-history-view-with-filters-topic-date-tags-and-detail-page",
+      "content": "F6: History view with filters (topic, date, tags) and detail page",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f7-export-infographic-png-svg-and-session-data-json",
+      "content": "F7: Export infographic (PNG/SVG) and session data (JSON)",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "2-non-functional",
+      "content": "2 Non-functional",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "n1-rate-limit-external-calls-cache-source-fetches",
       "content": "N1: Rate-limit external calls; cache source fetches",
       "status": "pending",
       "background": null,
@@ -83,8 +172,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-<<<<<<< Updated upstream
-=======
     },
     {
       "id": "n2-secure-oauth-and-api-secrets-no-secrets-in-repo",
@@ -485,7 +572,7 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
->>>>>>> Stashed changes
     }
   ]
 }
+>>>>>>> Stashed changes

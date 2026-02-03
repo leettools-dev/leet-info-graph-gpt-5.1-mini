@@ -117,20 +117,22 @@ async def update_session(session_id: str, payload: ResearchSessionUpdate = Body(
 @router.post("/{session_id}/run")
 async def run_research_session(session_id: str):
     """
-    Run a mock research pipeline for the session:
+    Run a research pipeline for the session:
     - Fetch sources using the mock search endpoint implementation
     - Save sources associated with the session
-    - Create a placeholder infographic entry
+    - Generate an infographic using the infographics module (if available)
+    - Fallback to a placeholder infographic if generation fails
     """
     session = _sessions.get(session_id)
     if not session:
         raise HTTPException(status_code=404, detail="Session not found")
 
-    # Use the mock search implementation in src.leet_apps.api.search
+    # Import dependencies
     try:
         from src.leet_apps.api import search as search_module
+        from src.leet_apps.api import infographics as infographics_module
     except Exception:
-        raise HTTPException(status_code=500, detail="Search module unavailable")
+        raise HTTPException(status_code=500, detail="Dependencies unavailable")
 
     # Call the search function with the session prompt
     results = await search_module.search(query=session.prompt)
@@ -138,14 +140,21 @@ async def run_research_session(session_id: str):
     # Store sources for the session
     _sources[session_id] = [dict(r) for r in results]
 
-    # Create a placeholder infographic record
-    infographic = {
-        "id": str(uuid.uuid4()),
-        "session_id": session_id,
-        "image_url": f"/static/infographics/{session_id}.png",
-        "layout_meta": {"template": "basic_v1"},
-        "created_at": datetime.utcnow(),
-    }
+    # Try to generate an infographic using the infographics module
+    try:
+        infographic_meta = await infographics_module.create_from_prompt(session_id=session_id, prompt=session.prompt, sources=_sources[session_id])
+        # create_from_prompt returns a dict-like mapping from the infographics module
+        infographic = dict(infographic_meta)
+    except Exception:
+        # Fallback placeholder infographic record
+        infographic = {
+            "id": str(uuid.uuid4()),
+            "session_id": session_id,
+            "image_url": f"/static/infographics/{session_id}.png",
+            "layout_meta": {"template": "basic_v1"},
+            "created_at": datetime.utcnow(),
+        }
+
     _infographics[session_id] = infographic
 
     # Update session status

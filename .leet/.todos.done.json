@@ -1,5 +1,9 @@
 {
   "todos": [
+<<<<<<< Updated upstream
+    {"id":"purpose","content":"Purpose","status":"completed"},
+    {"id":"phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list","content":"Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list","status":"completed"}
+=======
     {
       "id": "purpose",
       "content": "Purpose",
@@ -11,43 +15,8 @@
       "branch": null
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
-      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "completed",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "f1-gmail-oauth-login-and-account-management",
-      "content": "F1: Gmail OAuth login and account management",
-      "status": "completed",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "id": "scope",
-      "content": "Scope",
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "completed",
       "background": null,
       "dependencies": [],
@@ -55,5 +24,6 @@
       "goal_id": null,
       "branch": null
     }
+>>>>>>> Stashed changes
   ]
 }

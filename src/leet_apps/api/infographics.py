@@ -135,3 +135,14 @@ async def create_infographic_for_session(session_id: str, prompt: str, sources: 
     payload = InfographicCreate(session_id=session_id, prompt=prompt, sources=sources)
     res = await generate(payload)
     return res.dict()
+
+
+# Backwards compatible helper expected by sessions.run
+async def create_from_prompt(session_id: str, prompt: str, sources: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
+    """
+    Backwards-compatible helper used by sessions.run which expects create_from_prompt.
+    Generates an infographic for the given session using provided sources or an empty list.
+    """
+    if sources is None:
+        sources = []
+    return await create_infographic_for_session(session_id=session_id, prompt=prompt, sources=sources)

@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "scope",
-      "content": "Scope",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -111,8 +101,13 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
+=======
+      "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
+      "content": "F3: Web search pipeline to collect sources; show source list",
+>>>>>>> Stashed changes
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -378,7 +373,11 @@
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
+<<<<<<< Updated upstream
       "branch": null
+=======
+      "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
     },
     {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
@@ -581,8 +580,13 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
+=======
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+>>>>>>> Stashed changes
       "status": "in_progress",
       "background": null,
       "dependencies": [],

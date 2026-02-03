@@ -1,28 +1,3 @@
 {
-<<<<<<< Updated upstream
   "todos": []
-=======
-  "todos": [
-    {
-      "id": "purpose",
-      "content": "Purpose",
-      "status": "completed",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "scope",
-      "content": "Scope",
-      "status": "completed",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    }
-  ]
->>>>>>> Stashed changes
 }

@@ -94,8 +94,13 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
+=======
+      "id": "f1-gmail-oauth-login-and-account-management",
+      "content": "F1: Gmail OAuth login and account management",
+>>>>>>> Stashed changes
 =======
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
@@ -381,7 +386,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "status": "pending",
+=======
+      "status": "in_progress",
+>>>>>>> Stashed changes
 =======
       "status": "in_progress",
 >>>>>>> Stashed changes
@@ -398,7 +407,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "branch": null
+=======
+      "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
 =======
       "branch": "main#feature#export_session_and_infographic"
 >>>>>>> Stashed changes

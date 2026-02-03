@@ -2,9 +2,12 @@
   "todos": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "id": "purpose",
       "content": "Purpose",
 =======
+=======
+>>>>>>> Stashed changes
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
 >>>>>>> Stashed changes

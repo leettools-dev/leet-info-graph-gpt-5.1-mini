@@ -91,14 +91,24 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "in_progress",
+=======
+      "id": "f1-gmail-oauth-login-and-account-management",
+      "content": "F1: Gmail OAuth login and account management",
+      "status": "pending",
+>>>>>>> Stashed changes
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
+<<<<<<< Updated upstream
       "branch": "main#feature#chat_ui_v1"
+=======
+      "branch": null
+>>>>>>> Stashed changes
     },
     {
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
@@ -368,7 +378,11 @@
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
+<<<<<<< Updated upstream
       "branch": "main#feature#chat_ui_v1"
+=======
+      "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
     },
     {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
@@ -569,6 +583,19 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+>>>>>>> Stashed changes
     }
   ]
 }

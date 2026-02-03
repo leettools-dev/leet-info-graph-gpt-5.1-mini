@@ -13,7 +13,18 @@ generates an infographic, and provides...
 
 ## Features
 
-- History: sessions can be filtered by topic, date range, and tags via API parameters (topic, start_date, end_date, tags). Usage examples: GET /api/sessions?topic=ev&start_date=2026-01-01T00:00:00&end_date=2026-02-01T00:00:00&tags=market,analysis
+- Infographic generation (MVP): POST /api/infographics/generate accepts a prompt, optional stats and bullets, and returns SVG/PNG image URLs. The generator produces a simple template with title, stats, bullets and source list. Usage example:
+
+  POST /api/infographics/generate
+  {
+    "session_id": "s1",
+    "prompt": "Summarize current EV market trends",
+    "stats": [{"label":"EV Sales", "value": 42}],
+    "bullets": ["Battery costs falling", "Charging infrastructure expanding"],
+    "sources": [{"title":"A","url":"https://a","snippet":"..."}]
+  }
+
+- Export: /api/sessions/{session_id}/export and /api/sessions/{session_id}/export/infographic provide JSON exports and image streaming (PNG/SVG placeholders for demo).
 ## Getting Started
 
 ### Prerequisites

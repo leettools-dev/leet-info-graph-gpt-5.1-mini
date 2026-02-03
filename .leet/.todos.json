@@ -1,6 +1,7 @@
 {
   "todos": [
     {
+<<<<<<< Updated upstream
       "id": "scope",
       "content": "Scope",
       "status": "completed",
@@ -11,6 +12,8 @@
       "branch": null
     },
     {
+=======
+>>>>>>> Stashed changes
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -41,6 +44,7 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "in_progress",
@@ -51,6 +55,8 @@
       "branch": null
     },
     {
+=======
+>>>>>>> Stashed changes
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
@@ -133,6 +139,79 @@
     {
       "id": "confirm-oauth-scope-and-ui-flows",
       "content": "Confirm OAuth scope and UI flows",
+<<<<<<< Updated upstream
+=======
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "define-infographic-templates-and-chart-types",
+      "content": "Define infographic templates and chart types",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "implement-search-ingest-and-caching-strategy",
+      "content": "Implement search ingest and caching strategy",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "sign-in-with-google",
+      "content": "Sign in with Google",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "ask-summarize-current-ev-market-trends",
+      "content": "Ask: \u201cSummarize current EV market trends\u201d",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "review-sources-infographic",
+      "content": "Review sources + infographic",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "browse-past-sessions-in-history",
+      "content": "Browse past sessions in History",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+>>>>>>> Stashed changes
       "status": "in_progress",
       "background": null,
       "dependencies": [],

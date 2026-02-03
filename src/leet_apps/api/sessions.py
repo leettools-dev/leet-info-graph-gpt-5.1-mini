@@ -205,11 +205,16 @@ async def export_session(session_id: str):
     }
 
 
+from fastapi.responses import StreamingResponse
+import io
+import base64
+
 @router.get("/{session_id}/export/infographic")
 async def export_infographic(session_id: str, format: str = Query("png", regex="^(png|svg)$")):
     """
-    Export the infographic image. For demo purposes this returns the image URL and requested format.
-    In a real implementation this would stream the image bytes with appropriate content-type.
+    Export the infographic image. For demo purposes this streams a small placeholder image
+    for PNG and a simple SVG string for SVG format. In production this would stream the
+    actual image bytes from object storage (S3/GCS) with proper content-type and caching.
     """
     session = _sessions.get(session_id)
     if not session:
@@ -218,4 +223,18 @@ async def export_infographic(session_id: str, format: str = Query("png", regex="
     if not infographic:
         raise HTTPException(status_code=404, detail="Infographic not found")
 
-    return {"image_url": infographic["image_url"], "format": format}
+    if format == "png":
+        # 1x1 transparent PNG (base64-encoded) as a safe placeholder
+        png_b64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+        png_bytes = base64.b64decode(png_b64)
+        return StreamingResponse(io.BytesIO(png_bytes), media_type="image/png")
+    else:
+        svg = (
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+            "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"200\">"
+            "<rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/>"
+            "<text x=\"50%\" y=\"50%\" dominant-baseline=\"middle\" text-anchor=\"middle\""
+            " font-family=\"Arial, Helvetica, sans-serif\" font-size=\"16\" fill=\"#333\">"
+            "Infographic placeholder"</text></svg>"
+        )
+        return StreamingResponse(io.BytesIO(svg.encode("utf-8")), media_type="image/svg+xml")

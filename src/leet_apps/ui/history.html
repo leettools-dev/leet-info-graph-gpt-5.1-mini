@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infograph Assistant - History (Demo)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial; padding: 2rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { padding: 0.5rem; border: 1px solid #ddd; text-align: left; }
+    form > * { margin-right: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Session History (Demo)</h1>
+  <p>Filter and browse past research sessions.</p>
+
+  <form id="filter-form">
+    <input type="text" id="user_id" placeholder="User ID" aria-label="Filter by user id" />
+    <input type="text" id="topic" placeholder="Topic substring" aria-label="Filter by topic" />
+    <input type="text" id="tags" placeholder="Tags (comma-separated)" aria-label="Filter by tags" />
+    <input type="date" id="start_date" aria-label="Start date" />
+    <input type="date" id="end_date" aria-label="End date" />
+    <button id="apply">Apply</button>
+    <button id="clear" type="button">Clear</button>
+  </form>
+
+  <div id="results">
+    <table id="sessions-table">
+      <thead><tr><th>ID</th><th>User</th><th>Prompt</th><th>Topic</th><th>Tags</th><th>Created At</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <p><a href="/src/leet_apps/ui/index.html">Back to Demo Chat</a></p>
+
+  <script>
+    async function fetchSessions(params = {}){
+      const qs = new URLSearchParams(params).toString();
+      const res = await fetch('/api/sessions/' + (qs ? ('?' + qs) : ''));
+      if (!res.ok) {
+        alert('Failed to load sessions');
+        return [];
+      }
+      return await res.json();
+    }
+
+    function renderRows(sessions){
+      const tbody = document.querySelector('#sessions-table tbody');
+      tbody.innerHTML = '';
+      sessions.forEach(s => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td><a href="/api/sessions/${s.id}">${s.id}</a></td><td>${s.user_id}</td><td>${s.prompt}</td><td>${s.topic||''}</td><td>${(s.tags||[]).join(', ')}</td><td>${s.created_at}</td>`;
+        tbody.appendChild(tr);
+      });
+    }
+
+    document.getElementById('apply').addEventListener('click', async (e) => {
+      e.preventDefault();
+      const user_id = document.getElementById('user_id').value.trim();
+      const topic = document.getElementById('topic').value.trim();
+      const tags = document.getElementById('tags').value.trim();
+      const start_date = document.getElementById('start_date').value;
+      const end_date = document.getElementById('end_date').value;
+      const params = {};
+      if (user_id) params.user_id = user_id;
+      if (topic) params.topic = topic;
+      if (tags) params.tags = tags;
+      if (start_date) params.start_date = new Date(start_date).toISOString();
+      if (end_date) params.end_date = new Date(end_date).toISOString();
+      const sessions = await fetchSessions(params);
+      renderRows(sessions);
+    });
+
+    document.getElementById('clear').addEventListener('click', async () => {
+      document.getElementById('filter-form').reset();
+      const sessions = await fetchSessions();
+      renderRows(sessions);
+    });
+
+    // load initial
+    (async () => {
+      const sessions = await fetchSessions();
+      renderRows(sessions);
+    })();
+  </script>
+</body>
+</html>

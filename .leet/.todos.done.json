@@ -1,8 +1,18 @@
 {
   "todos": [
     {
-      "id": "purpose",
-      "content": "Purpose",
+      "id": "export-infographic-streaming",
+      "content": "export_infographic_streaming",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#export_infographic_streaming"
+    },
+    {
+      "id": "scope",
+      "content": "Scope",
       "status": "completed",
       "background": null,
       "dependencies": [],

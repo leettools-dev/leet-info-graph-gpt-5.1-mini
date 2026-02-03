@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "scope",
-      "content": "Scope",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -91,6 +81,19 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
+=======
+      "id": "f1-gmail-oauth-login-and-account-management",
+      "content": "F1: Gmail OAuth login and account management",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+>>>>>>> Stashed changes
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
@@ -541,8 +544,13 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "f6-history-view-with-filters-topic-date-tags-and-detail-page",
       "content": "F6: History view with filters (topic, date, tags) and detail page",
+=======
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+>>>>>>> Stashed changes
       "status": "in_progress",
       "background": null,
       "dependencies": [],

@@ -1,28 +1,8 @@
 {
   "todos": [
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "id": "purpose",
-      "content": "Purpose",
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "id": "input-natural-language-research-prompt",
-      "content": "Input: natural-language research prompt",
->>>>>>> Stashed changes
+      "id": "scope",
+      "content": "Scope",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -31,10 +11,16 @@
       "branch": null
     },
     {
-<<<<<<< Updated upstream
-      "id": "scope",
-      "content": "Scope",
-=======
+      "id": "input-natural-language-research-prompt",
+      "content": "Input: natural-language research prompt",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session",
       "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \u201cresearch session\u201d",
       "status": "pending",
@@ -77,7 +63,6 @@
     {
       "id": "product-market-researchers",
       "content": "Product/market researchers",
->>>>>>> Stashed changes
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -86,8 +71,8 @@
       "branch": null
     },
     {
-      "id": "input-natural-language-research-prompt",
-      "content": "Input: natural-language research prompt",
+      "id": "knowledge-workers-who-need-quick-visual-summaries",
+      "content": "Knowledge workers who need quick visual summaries",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -96,8 +81,8 @@
       "branch": null
     },
     {
-      "id": "output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session",
-      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \"research session\"",
+      "id": "requirements",
+      "content": "Requirements",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -106,8 +91,8 @@
       "branch": null
     },
     {
-      "id": "core-oauth-login-chat-ui-web-search-summarization-infographic-generation-history-browsing",
-      "content": "Core: OAuth login, chat UI, web search + summarization + infographic generation, history browsing",
+      "id": "1-functional",
+      "content": "1 Functional",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -118,6 +103,16 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -174,8 +169,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-<<<<<<< Updated upstream
-=======
     },
     {
       "id": "2-non-functional",
@@ -390,17 +383,17 @@
     {
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
-      "status": "in_progress",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": "main#feature#export_session_and_infographic"
+      "branch": null
     },
     {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
       "content": "Phase 2: Infographic generation MVP (static template + charts), session save",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -596,17 +589,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-    },
-    {
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
->>>>>>> Stashed changes
     }
   ]
 }

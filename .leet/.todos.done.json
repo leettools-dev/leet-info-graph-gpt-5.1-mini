@@ -49,6 +49,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": "main#feature#phase1_oauth_and_chat"
+    },
+    {
+      "id": "f1-gmail-oauth-login-and-account-management",
+      "content": "F1: Gmail OAuth login and account management",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#add_ui_skeleton"
     }
   ]
 }

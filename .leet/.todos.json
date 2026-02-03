@@ -33,12 +33,12 @@
     {
       "id": "core-oauth-login-chat-ui-web-search-summarization-infographic-generation-history-browsing",
       "content": "Core: OAuth login, chat UI, web search + summarization + infographic generation, history browsing",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
+      "branch": "main#feature#frontend-ui-skeleton"
     },
     {
       "id": "users",
@@ -99,16 +99,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-    },
-    {
-      "id": "f1-gmail-oauth-login-and-account-management",
-      "content": "F1: Gmail OAuth login and account management",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": "main#feature#add_ui_skeleton"
     },
     {
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
@@ -503,7 +493,7 @@
     {
       "id": "confirm-oauth-scope-and-ui-flows",
       "content": "Confirm OAuth scope and UI flows",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -571,8 +561,8 @@
       "branch": null
     },
     {
-      "id": "ui-skeleton:-spa-pages-(chat,-history,-detail)-under-src/leet_apps/ui",
-      "content": "UI skeleton: SPA pages (chat, history, detail) under src/leet_apps/ui",
+      "id": "implement-frontend-ui-skeleton-(src/leet_apps/ui)-with-chat-and-history-pages-and-basic-routing",
+      "content": "Implement frontend UI skeleton (src/leet_apps/ui) with chat and history pages and basic routing",
       "status": "in_progress",
       "background": null,
       "dependencies": [],

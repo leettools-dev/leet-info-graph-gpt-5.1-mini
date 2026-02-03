@@ -12,8 +12,13 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "id": "implement-search-ingest-and-caching-strategy",
       "content": "Implement search ingest and caching strategy",
+=======
+      "id": "scope",
+      "content": "Scope",
+>>>>>>> Stashed changes
 =======
       "id": "scope",
       "content": "Scope",

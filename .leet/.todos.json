@@ -31,8 +31,13 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
+=======
+      "id": "users",
+      "content": "Users",
+>>>>>>> Stashed changes
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -41,6 +46,69 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
+=======
+      "id": "students-and-educators",
+      "content": "Students and educators",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "product-market-researchers",
+      "content": "Product/market researchers",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "knowledge-workers-who-need-quick-visual-summaries",
+      "content": "Knowledge workers who need quick visual summaries",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "requirements",
+      "content": "Requirements",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "1-functional",
+      "content": "1 Functional",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+>>>>>>> Stashed changes
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
@@ -322,6 +390,7 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+<<<<<<< Updated upstream
     },
     {
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
@@ -333,6 +402,8 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+=======
+>>>>>>> Stashed changes
     }
   ]
 }

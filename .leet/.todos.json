@@ -100,11 +100,14 @@
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
       "status": "pending",
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
       "status": "pending",
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "background": null,
       "dependencies": [],
@@ -112,7 +115,11 @@
       "goal_id": null,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "branch": "main#feature#chat_ui_v1"
+=======
+      "branch": null
+>>>>>>> Stashed changes
 =======
       "branch": null
 >>>>>>> Stashed changes
@@ -390,7 +397,11 @@
       "goal_id": null,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "branch": "main#feature#chat_ui_v1"
+=======
+      "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
 =======
       "branch": "main#feature#export_session_and_infographic"
 >>>>>>> Stashed changes

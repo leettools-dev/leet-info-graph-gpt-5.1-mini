@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "scope",
-      "content": "Scope",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -22,7 +12,7 @@
     },
     {
       "id": "output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session",
-      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \u201cresearch session\u201d",
+      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \"research session\"",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -103,16 +93,6 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -562,7 +542,7 @@
     },
     {
       "id": "ask-summarize-current-ev-market-trends",
-      "content": "Ask: \u201cSummarize current EV market trends\u201d",
+      "content": "Ask: \"Summarize current EV market trends\"",
       "status": "pending",
       "background": null,
       "dependencies": [],

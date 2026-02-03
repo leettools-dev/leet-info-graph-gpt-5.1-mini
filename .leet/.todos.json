@@ -365,7 +365,11 @@
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "status": "pending",
+=======
+      "status": "in_progress",
+>>>>>>> Stashed changes
 =======
       "status": "in_progress",
 >>>>>>> Stashed changes
@@ -378,7 +382,11 @@
       "goal_id": null,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "branch": null
+=======
+      "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
 =======
       "branch": "main#feature#export_session_and_infographic"
 >>>>>>> Stashed changes

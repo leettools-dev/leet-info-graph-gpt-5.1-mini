@@ -56,6 +56,19 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+    },
+    {
+      "id": "scope",
+      "content": "Scope",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
 >>>>>>> Stashed changes
     }
   ]

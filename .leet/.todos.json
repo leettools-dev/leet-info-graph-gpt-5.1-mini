@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "purpose",
-      "content": "Purpose",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": "main#feature#phase1_oauth_and_chat"
-    },
-    {
       "id": "scope",
       "content": "Scope",
       "status": "pending",
@@ -113,12 +103,12 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
+      "branch": "main#feature#add_ui_skeleton"
     },
     {
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
@@ -371,6 +361,16 @@
       "branch": null
     },
     {
+      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
+      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
       "content": "Phase 2: Infographic generation MVP (static template + charts), session save",
       "status": "pending",
@@ -533,7 +533,7 @@
     {
       "id": "sign-in-with-google",
       "content": "Sign in with Google",
-      "status": "pending",
+      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -571,8 +571,8 @@
       "branch": null
     },
     {
-      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
-      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
+      "id": "ui-skeleton:-spa-pages-(chat,-history,-detail)-under-src/leet_apps/ui",
+      "content": "UI skeleton: SPA pages (chat, history, detail) under src/leet_apps/ui",
       "status": "in_progress",
       "background": null,
       "dependencies": [],

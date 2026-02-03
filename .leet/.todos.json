@@ -2,6 +2,7 @@
   "todos": [
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {"id": "purpose", "content": "Purpose", "status": "pending"},
     {"id": "scope", "content": "Scope", "status": "pending"},
     {"id": "input-natural-language-research-prompt", "content": "Input: natural-language research prompt", "status": "pending"},
@@ -32,6 +33,8 @@
 
     {"id": "auth-tests", "content": "auth_tests", "status": "in_progress", "branch": "main#feature#auth_tests"}
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     {

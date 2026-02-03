@@ -541,6 +541,16 @@
       "branch": null
     },
     {
+      "id": "implement-search-ingest-and-caching-strategy",
+      "content": "Implement search ingest and caching strategy",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "sign-in-with-google",
       "content": "Sign in with Google",
       "status": "pending",
@@ -574,16 +584,6 @@
       "id": "browse-past-sessions-in-history",
       "content": "Browse past sessions in History",
       "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "implement-search-ingest-and-caching-strategy",
-      "content": "Implement search ingest and caching strategy",
-      "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],

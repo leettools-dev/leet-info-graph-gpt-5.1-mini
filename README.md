@@ -13,7 +13,19 @@ generates an infographic, and provides a library to browse past infographics and
 
 ## Features
 
-- Infographics: Added a backwards-compatible helper create_from_prompt so sessions.run uses the infographics generator. This ensures sessions executed via /api/sessions/{id}/run will create and associate an infographic record using the generator (SVG) instead of the placeholder.
+- Basic backend API with in-memory stores for Users, ResearchSessions, Sources, and Infographics. Endpoints:
+  - POST /api/users - create user
+  - GET /api/users/{user_id} - get user
+  - POST /api/sessions - create research session
+  - GET /api/sessions/{session_id} - get session
+  - POST /api/sessions/{session_id}/sources - add source
+  - GET /api/sessions/{session_id}/sources - list sources
+  - POST /api/sessions/{session_id}/infographic - generate simple SVG infographic (data URL)
+  - GET /api/sessions/{session_id}/infographic - get infographic
+
+Usage examples:
+
+- Create a user and a session, add sources, and generate an infographic using the API endpoints. See src/leet_apps/tests/test_api_main.py for an end-to-end test example.
 ## Getting Started
 
 ### Prerequisites

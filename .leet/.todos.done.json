@@ -1,14 +1,38 @@
 {
   "todos": [
     {
-      "id": "purpose",
-      "content": "Purpose",
+      "id": "phase1-complete",
+      "content": "phase1-complete",
       "status": "completed",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
+<<<<<<< Updated upstream
+      "branch": "main#feature#phase1-complete"
+    },
+    {
+      "id": "phase-2-infographic-mvp",
+      "content": "phase-2-infographic-mvp",
+=======
       "branch": null
+    },
+    {
+      "id": "scope",
+      "content": "Scope",
+>>>>>>> Stashed changes
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+<<<<<<< Updated upstream
+      "branch": "main#feature#phase2-infographic-mvp"
+=======
+      "branch": null
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
     },
     {
       "id": "scope",
@@ -19,6 +43,7 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+>>>>>>> Stashed changes
     }
   ]
 }

@@ -35,9 +35,10 @@ def test_generate_and_fetch_infographic():
     assert res3.status_code == 200
     assert res3.headers["content-type"].startswith("image/svg")
 
-    # request unsupported png -> 415
+    # request png -> demo returns a PNG placeholder (200)
     res4 = client.get(f"/api/infographics/{info_id}/image?format=png")
-    assert res4.status_code == 415
+    assert res4.status_code == 200
+    assert res4.headers["content-type"].startswith("image/png")
 
 
 def test_generate_without_title_fails():

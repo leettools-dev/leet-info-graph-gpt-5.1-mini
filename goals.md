@@ -140,7 +140,7 @@ Appendix: sample user flow
 - [ ] Message: id, session_id, role, content, created_at
 - [ ] Implementation Guide Compliance
 - [ ] Implementation Plan
-- [ ] Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list
+- [x] Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list
 - [ ] Phase 2: Infographic generation MVP (static template + charts), session save
 - [ ] Phase 3: Advanced layouts, tagging, exports, improved source scoring
 - [ ] Risks

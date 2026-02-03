@@ -104,18 +104,22 @@ async def get_infographic(infographic_id: str):
 
 from fastapi.responses import StreamingResponse
 import io
+import base64
 
 
 @router.get("/{infographic_id}/image")
 async def get_infographic_image(infographic_id: str, format: str = Query("svg", regex="^(svg|png)$")):
-    # For demo, we only have SVG bytes. If png requested, return 415
+    # For demo, we have SVG bytes stored. Support SVG streaming and provide a safe PNG placeholder for PNG requests.
     svg_bytes = _images.get(infographic_id)
     if not svg_bytes:
         raise HTTPException(status_code=404, detail="Infographic image not found")
     if format == "svg":
         return StreamingResponse(io.BytesIO(svg_bytes), media_type="image/svg+xml")
     else:
-        raise HTTPException(status_code=415, detail="PNG export not implemented in demo")
+        # Return a 1x1 transparent PNG placeholder for demo purposes.
+        png_b64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+        png_bytes = base64.b64decode(png_b64)
+        return StreamingResponse(io.BytesIO(png_bytes), media_type="image/png")
 
 
 # Helper for other modules to create an infographic from a prompt/session

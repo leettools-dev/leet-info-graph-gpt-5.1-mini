@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
-      "content": "Phase 2: Infographic generation MVP (static template + charts), session save",
-      "status": "completed",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "phase1-complete",
       "content": "phase1-complete",
       "status": "completed",
@@ -28,17 +18,7 @@
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "scope",
-      "content": "Scope",
-      "status": "completed",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
+      "branch": "main#feature#phase2-infographic-mvp"
     }
   ]
 }

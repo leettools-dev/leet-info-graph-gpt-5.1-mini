@@ -11,8 +11,13 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
       "id": "implement-search-ingest-and-caching-strategy",
       "content": "Implement search ingest and caching strategy",
+=======
+      "id": "scope",
+      "content": "Scope",
+>>>>>>> Stashed changes
       "status": "completed",
       "background": null,
       "dependencies": [],

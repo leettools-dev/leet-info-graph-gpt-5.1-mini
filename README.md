@@ -14,6 +14,10 @@ generates an infographic, and provides...
 ## Features
 
 - Search: Added caching (TTL) and per-client rate limiting to the mock search endpoint (/api/search). Cache TTL is 10 minutes and rate limit default is 10 requests per 60s window. Utility endpoint to clear cache for testing is available at POST /api/search/cache/clear.
+- Auth: Gmail OAuth login endpoints (start login, callback, me, logout) implemented with placeholder and simulated-token modes for local development. Configure GOOGLE_OAUTH_CLIENT_ID and optionally GOOGLE_OAUTH_CLIENT_SECRET and GOOGLE_OAUTH_REDIRECT_URI as environment variables.
+- Sessions: ResearchSession CRUD, run pipeline (mock), sources and infographic placeholders, export endpoints.
+- Messages: Simple chat messages API used by the demo UI.
+- UI: Minimal demo chat UI and history browsing pages under src/leet_apps/ui.
 ## Getting Started
 
 ### Prerequisites

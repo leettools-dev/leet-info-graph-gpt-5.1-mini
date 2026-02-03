@@ -30,6 +30,8 @@ Configuration notes:
 - Set GOOGLE_OAUTH_CLIENT_ID and optionally GOOGLE_OAUTH_CLIENT_SECRET and GOOGLE_OAUTH_REDIRECT_URI for OAuth demo flows.
 - Do not commit secrets to the repository; use environment variables or a secrets manager.
 
+
+- Export: Streaming export endpoints for infographic images (PNG/SVG) implemented for demo mode (src/leet_apps/api/sessions.py). Returns a small placeholder PNG or an SVG payload; in production this should stream from object storage.
 ## Getting Started
 
 ### Prerequisites

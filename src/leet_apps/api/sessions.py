@@ -14,9 +14,13 @@ _infographics: Dict[str, dict] = {}
 class ResearchSessionCreate(BaseModel):
     user_id: str
     prompt: str
+    topic: Optional[str] = None
+    tags: Optional[List[str]] = Field(default_factory=list)
 
 class ResearchSessionUpdate(BaseModel):
     status: Optional[str]
+    topic: Optional[str]
+    tags: Optional[List[str]]
 
 class ResearchSession(BaseModel):
     id: str
@@ -24,6 +28,8 @@ class ResearchSession(BaseModel):
     prompt: str
     status: str
     created_at: datetime
+    topic: Optional[str] = None
+    tags: List[str] = Field(default_factory=list)
 
 class Source(BaseModel):
     title: str
@@ -43,6 +49,8 @@ async def create_session(payload: ResearchSessionCreate = Body(...)):
         prompt=payload.prompt,
         status="pending",
         created_at=now,
+        topic=payload.topic,
+        tags=payload.tags or [],
     )
     _sessions[session_id] = session
     return session
@@ -57,10 +65,37 @@ async def get_session(session_id: str):
 
 
 @router.get("/", response_model=List[ResearchSession])
-async def list_sessions(user_id: Optional[str] = None):
+async def list_sessions(
+    user_id: Optional[str] = None,
+    topic: Optional[str] = None,
+    start_date: Optional[datetime] = Query(None),
+    end_date: Optional[datetime] = Query(None),
+    tags: Optional[str] = Query(None, description="Comma-separated list of tags to filter by"),
+):
+    """
+    List sessions with optional filters:
+    - user_id: exact match
+    - topic: substring (case-insensitive) match
+    - start_date / end_date: ISO-8601 datetimes to filter created_at
+    - tags: comma-separated list; returns sessions that include ALL provided tags
+    """
     sessions = list(_sessions.values())
     if user_id:
         sessions = [s for s in sessions if s.user_id == user_id]
+    if topic:
+        q = topic.lower()
+        sessions = [s for s in sessions if s.topic and q in s.topic.lower()]
+    if start_date:
+        sessions = [s for s in sessions if s.created_at >= start_date]
+    if end_date:
+        sessions = [s for s in sessions if s.created_at <= end_date]
+    if tags:
+        requested = [t.strip().lower() for t in tags.split(",") if t.strip()]
+        if requested:
+            def has_all(s):
+                s_tags = [t.lower() for t in (s.tags or [])]
+                return all(r in s_tags for r in requested)
+            sessions = [s for s in sessions if has_all(s)]
     return sessions
 
 
@@ -71,7 +106,11 @@ async def update_session(session_id: str, payload: ResearchSessionUpdate = Body(
         raise HTTPException(status_code=404, detail="Session not found")
     if payload.status:
         session.status = payload.status
-        _sessions[session_id] = session
+    if payload.topic is not None:
+        session.topic = payload.topic
+    if payload.tags is not None:
+        session.tags = payload.tags
+    _sessions[session_id] = session
     return session
 
 

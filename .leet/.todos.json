@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "scope",
-      "content": "Scope",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -29,16 +19,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-    },
-    {
-      "id": "core-oauth-login-chat-ui-web-search-summarization-infographic-generation-history-browsing",
-      "content": "Core: OAuth login, chat UI, web search + summarization + infographic generation, history browsing",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": "main#feature#frontend-ui-skeleton"
     },
     {
       "id": "users",
@@ -101,6 +81,22 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
+=======
+      "id": "f1-gmail-oauth-login-and-account-management",
+      "content": "F1: Gmail OAuth login and account management",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
@@ -123,16 +119,6 @@
     {
       "id": "f5-save-each-research-session-with-prompt-sources-and-infographic",
       "content": "F5: Save each research session with prompt, sources, and infographic",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "f6-history-view-with-filters-topic-date-tags-and-detail-page",
-      "content": "F6: History view with filters (topic, date, tags) and detail page",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -561,8 +547,18 @@
       "branch": null
     },
     {
-      "id": "implement-frontend-ui-skeleton-(src/leet_apps/ui)-with-chat-and-history-pages-and-basic-routing",
-      "content": "Implement frontend UI skeleton (src/leet_apps/ui) with chat and history pages and basic routing",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      "id": "f6-history-view-with-filters-topic-date-tags-and-detail-page",
+      "content": "F6: History view with filters (topic, date, tags) and detail page",
+=======
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+>>>>>>> Stashed changes
+=======
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+>>>>>>> Stashed changes
       "status": "in_progress",
       "background": null,
       "dependencies": [],

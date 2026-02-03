@@ -101,11 +101,14 @@
       "content": "F1: Gmail OAuth login and account management",
       "status": "pending",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
       "status": "pending",
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -371,7 +374,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "status": "pending",
+=======
+      "status": "in_progress",
+>>>>>>> Stashed changes
 =======
       "status": "in_progress",
 >>>>>>> Stashed changes
@@ -388,7 +395,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "branch": null
+=======
+      "branch": "main#feature#frontend-spa-chat-history-detail-pages"
+>>>>>>> Stashed changes
 =======
       "branch": "main#feature#frontend-spa-chat-history-detail-pages"
 >>>>>>> Stashed changes

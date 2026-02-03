@@ -9,6 +9,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+    },
+    {
+      "id": "phase1-complete",
+      "content": "phase1-complete",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#phase1-complete"
     }
   ]
 }

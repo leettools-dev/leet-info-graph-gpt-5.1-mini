@@ -591,14 +591,14 @@
       "branch": null
     },
     {
-      "id": "phase1-complete",
-      "content": "phase1-complete",
-      "status": "in_progress",
+      "id": "phase-2-infographic-mvp",
+      "content": "phase-2-infographic-mvp",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": "main#feature#phase1-complete"
+      "branch": null
     }
   ]
 }

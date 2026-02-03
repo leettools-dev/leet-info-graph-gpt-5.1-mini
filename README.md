@@ -14,6 +14,12 @@ generates an infographic, and provides...
 ## Features
 
 - UI: Minimal SPA demo page (src/leet_apps/ui/index.html) with a simple chat interface wired to /api/messages endpoints. Accessible at / (serves static index.html).
+
+- Backend: REST API endpoints for auth, users, sessions, search, messages (mock implementations) that support OAuth demo flow, session CRUD, mock search pipeline, and infographic placeholders.
+- In-memory stores for rapid prototyping (replace with DB in production).
+- UI: Minimal SPA demo page (src/leet_apps/ui/index.html) with a chat interface wired to /api/messages endpoints.
+- Tests: pytest test suite under src/leet_apps/tests covering endpoints and mock pipelines.
+
 ## Getting Started
 
 ### Prerequisites

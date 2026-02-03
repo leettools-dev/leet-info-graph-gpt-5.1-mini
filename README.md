@@ -23,6 +23,8 @@ generates an infographic, and provides...
 - UI: minimal static index.html under src/leet_apps/ui for demo
 
 - Sessions: create/list/update research sessions with filters (topic, date range, tags). API endpoints: POST /api/sessions/, GET /api/sessions/, GET /api/sessions/{id}, PUT /api/sessions/{id}, POST /api/sessions/{id}/run to execute the mock research pipeline.
+
+- Auth: Gmail OAuth helper endpoints in /api/auth to start login and handle callback (simulated in local dev). Added /api/auth/me to return current user using X-User-Id or demo token and /api/auth/logout to remove demo user.
 ## Getting Started
 
 ### Prerequisites

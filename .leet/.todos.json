@@ -2,9 +2,12 @@
   "todos": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "id": "purpose",
       "content": "Purpose",
 =======
+=======
+>>>>>>> Stashed changes
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -87,6 +90,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "in_progress",
@@ -97,6 +101,8 @@
       "branch": "main#feature#history_ui"
     },
     {
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
@@ -573,6 +579,9 @@
     {
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "status": "in_progress",
       "background": null,

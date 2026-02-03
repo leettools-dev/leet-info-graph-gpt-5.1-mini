@@ -13,17 +13,7 @@ generates an infographic, and provides...
 
 ## Features
 
-- Purpose: Build a full-stack web app with Gmail OAuth login that lets users ask for web research, generates an infographic, and provides a library to browse past infographics and related sources.
-
-- Scope: Accept natural-language research prompts and return a generated infographic (image + metadata), supporting sources, and a saved research session. Core components: OAuth login, chat UI, web search + summarization + infographic generation, and history browsing.
-
-Usage example:
-
-1. Sign in with Google
-2. Ask (chat): "Summarize current EV market trends"
-3. Review generated infographic and source list
-4. Browse past sessions in History
-
+- History: sessions can be filtered by topic, date range, and tags via API parameters (topic, start_date, end_date, tags). Usage examples: GET /api/sessions?topic=ev&start_date=2026-01-01T00:00:00&end_date=2026-02-01T00:00:00&tags=market,analysis
 ## Getting Started
 
 ### Prerequisites

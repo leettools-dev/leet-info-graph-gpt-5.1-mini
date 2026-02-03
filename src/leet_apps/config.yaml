@@ -1,0 +1,11 @@
+# Project configuration (non-secret)
+project_name: leet-info-graph-gpt-5.1-mini
+ui:
+  base_path: /
+  session_timeout_minutes: 30
+search:
+  cache_ttl_seconds: 3600
+  max_results: 10
+infographic:
+  default_template: basic_v1
+  image_bucket: mock-bucket

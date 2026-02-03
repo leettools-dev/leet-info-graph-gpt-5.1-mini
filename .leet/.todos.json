@@ -1,32 +1,5 @@
 {
   "todos": [
-<<<<<<< Updated upstream
-    {"id": "scope", "content": "Scope", "status": "completed", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "input-natural-language-research-prompt", "content": "Input: natural-language research prompt", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session", "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \"research session\"", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-
-    {"id": "f1-gmail-oauth-login-and-account-management", "content": "F1: Gmail OAuth login and account management", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups", "content": "F2: Chat UI to submit research prompts and follow-ups", "status": "in_progress", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "f3-web-search-pipeline-to-collect-sources-show-source-list", "content": "F3: Web search pipeline to collect sources; show source list", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "f4-generate-infographic-title-key-stats-bullets-charts-references", "content": "F4: Generate infographic (title, key stats, bullets, charts, references)", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "f5-save-each-research-session-with-prompt-sources-and-infographic", "content": "F5: Save each research session with prompt, sources, and infographic", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "f6-history-view-with-filters-topic-date-tags-and-detail-page", "content": "F6: History view with filters (topic, date, tags) and detail page", "status": "completed", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": "main#feature#history_filters"},
-    {"id": "f7-export-infographic-png-svg-and-session-data-json", "content": "F7: Export infographic (PNG/SVG) and session data (JSON)", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-
-    {"id": "n1-rate-limit-external-calls-cache-source-fetches", "content": "N1: Rate-limit external calls; cache source fetches", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "n2-secure-oauth-and-api-secrets-no-secrets-in-repo", "content": "N2: Secure OAuth and API secrets; no secrets in repo", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "n3-traceable-provenance-source-links-per-claim", "content": "N3: Traceable provenance (source links per claim)", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "n4-responsive-ui-core-pages-render-under-2s-on-broadband", "content": "N4: Responsive UI; core pages render under 2s on broadband", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "n5-accessibility-keyboard-nav-aria-labels-contrast-checks", "content": "N5: Accessibility: keyboard nav, ARIA labels, contrast checks", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-
-    {"id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list", "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list", "status": "completed", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": "main"},
-    {"id": "phase-2-infographic-generation-mvp-static-template-charts-session-save", "content": "Phase 2: Infographic generation MVP (static template + charts), session save", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "phase-3-advanced-layouts-tagging-exports-improved-source-scoring", "content": "Phase 3: Advanced layouts, tagging, exports, improved source scoring", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-
-    {"id": "confirm-oauth-scope-and-ui-flows", "content": "Confirm OAuth scope and UI flows", "status": "in_progress", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "define-infographic-templates-and-chart-types", "content": "Define infographic templates and chart types", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null},
-    {"id": "implement-search-ingest-and-caching-strategy", "content": "Implement search ingest and caching strategy", "status": "pending", "background": null, "dependencies": [], "suggested_solutions": [], "goal_id": null, "branch": null}
-=======
     {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
@@ -128,6 +101,25 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
@@ -388,6 +380,16 @@
       "branch": null
     },
     {
+      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
+      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
       "content": "Phase 2: Infographic generation MVP (static template + charts), session save",
       "status": "pending",
@@ -586,6 +588,8 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+<<<<<<< Updated upstream
+=======
     },
     {
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
@@ -596,7 +600,7 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-    }
 >>>>>>> Stashed changes
+    }
   ]
 }

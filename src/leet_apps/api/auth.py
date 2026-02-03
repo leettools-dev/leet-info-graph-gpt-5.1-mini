@@ -1,5 +1,5 @@
 import os
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Header
 from urllib.parse import urlencode
 from typing import Optional
 
@@ -82,3 +82,65 @@ async def callback(code: Optional[str] = None, error: Optional[str] = None):
         pass
 
     return {"status": "ok", "tokens": tokens, "user": user}
+
+
+@router.get("/me")
+async def me(x_user_id: Optional[str] = Header(None), authorization: Optional[str] = Header(None)):
+    """
+    Return the current user information.
+    Authentication for the demo supports either:
+    - X-User-Id header with a user id present in the in-memory users store
+    - Authorization: Bearer <token> where token == 'fake_access_token' created by the callback simulation
+
+    This is intentionally simple for the prototype; in production, validate JWTs or session cookies.
+    """
+    # If X-User-Id header provided, try to fetch the user
+    if x_user_id:
+        try:
+            from src.leet_apps.api import users as users_module
+            user = users_module._users.get(x_user_id)
+            if not user:
+                raise HTTPException(status_code=404, detail="User not found")
+            return user
+        except HTTPException:
+            raise
+        except Exception:
+            raise HTTPException(status_code=500, detail="Unable to access user store")
+
+    # Fallback: check Authorization header for the demo token
+    if authorization:
+        parts = authorization.split()
+        if len(parts) == 2 and parts[0].lower() == "bearer" and parts[1] == "fake_access_token":
+            # Return the simulated user created by callback
+            try:
+                from src.leet_apps.api import users as users_module
+                user = users_module._users.get("123")
+                if user:
+                    return user
+                # If not present, return a minimal simulated user
+                return {"id": "123", "email": "user@example.com", "name": "Test User"}
+            except Exception:
+                return {"id": "123", "email": "user@example.com", "name": "Test User"}
+
+    raise HTTPException(status_code=401, detail="Not authenticated")
+
+
+@router.post("/logout")
+async def logout(x_user_id: Optional[str] = Header(None)):
+    """
+    Logout a user in the demo by removing them from the in-memory user store if X-User-Id is provided.
+    In production, revoke tokens and clear sessions instead.
+    """
+    if not x_user_id:
+        raise HTTPException(status_code=400, detail="X-User-Id header required for demo logout")
+    try:
+        from src.leet_apps.api import users as users_module
+        if x_user_id in users_module._users:
+            del users_module._users[x_user_id]
+            return {"status": "ok"}
+        else:
+            raise HTTPException(status_code=404, detail="User not found")
+    except HTTPException:
+        raise
+    except Exception:
+        raise HTTPException(status_code=500, detail="Unable to modify user store")

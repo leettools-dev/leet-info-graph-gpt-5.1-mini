@@ -1,8 +1,15 @@
-<<<<<<< Updated upstream
-{"todos": [{"content": "F1: Gmail OAuth login and account management","status": "in_progress","id": "f1","background": "Implement OAuth endpoints and tests","dependencies": [],"suggested_solutions": ["Add auth endpoints in src/leet_apps/api/auth.py","Add tests in src/leet_apps/tests/test_api_auth.py"],"goal_id": "goal1","branch": "main#feature#research_session_crud"},{"content": "F2: Chat UI to submit research prompts and follow-ups","status": "pending","id": "f2","background": "UI work","dependencies": ["f1"],"suggested_solutions": ["Create SPA components in src/leet_apps/ui"],"goal_id": "goal1"}]}
-=======
 {
   "todos": [
+    {
+      "id": "scope",
+      "content": "Scope",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
     {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
@@ -96,6 +103,16 @@
     {
       "id": "f1-gmail-oauth-login-and-account-management",
       "content": "F1: Gmail OAuth login and account management",
+      "status": "in_progress",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
+      "content": "F2: Chat UI to submit research prompts and follow-ups",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -364,6 +381,16 @@
       "branch": null
     },
     {
+      "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
+      "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
       "content": "Phase 2: Infographic generation MVP (static template + charts), session save",
       "status": "pending",
@@ -562,17 +589,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-    },
-    {
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
-      "status": "in_progress",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
     }
   ]
 }
->>>>>>> Stashed changes

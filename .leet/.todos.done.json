@@ -8,10 +8,7 @@
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-<<<<<<< Updated upstream
       "branch": "main#feature#export_infographic_streaming"
-=======
-      "branch": null
     },
     {
       "id": "scope",
@@ -22,10 +19,6 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     }
   ]
 }

@@ -59,6 +59,16 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": "main#feature#add_ui_skeleton"
+    },
+    {
+      "id": "core-oauth-login-chat-ui-web-search-summarization-infographic-generation-history-browsing",
+      "content": "Core: OAuth login, chat UI, web search + summarization + infographic generation, history browsing",
+      "status": "completed",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": "main#feature#frontend-ui-skeleton"
     }
   ]
 }

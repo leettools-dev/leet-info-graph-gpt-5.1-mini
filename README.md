@@ -13,25 +13,7 @@ generates an infographic, and provides...
 
 ## Features
 
-- Auth: Gmail OAuth demo endpoints (POST /api/auth/login, GET /api/auth/callback, GET /api/auth/me, POST /api/auth/logout). Simulated token exchange for local development when GOOGLE_OAUTH_CLIENT_SECRET is set; safe placeholder mode when not set.
-- Backend: FastAPI REST endpoints for users, sessions, search, messages with in-memory stores for rapid prototyping (src/leet_apps/api).
-- UI: Minimal SPA demo page (src/leet_apps/ui/index.html) with a simple chat UI wired to /api/messages endpoints.
-- Sessions: Create, list, update, run (mock research pipeline), export session JSON and infographic metadata (src/leet_apps/api/sessions.py).
-- Search: Mock search endpoint with simple in-memory cache to avoid repeated fetches (src/leet_apps/api/search.py).
-- Tests: pytest test suite under src/leet_apps/tests covering endpoints and mock pipelines.
-
-Usage examples:
-- Start OAuth flow (demo): POST /api/auth/login -> returns Google authorization URL (requires GOOGLE_OAUTH_CLIENT_ID env var).
-- Create a session: POST /api/sessions/ { user_id, prompt }
-- Run a session (mock pipeline): POST /api/sessions/{session_id}/run
-- View messages: GET /api/messages/session/{session_id}
-
-Configuration notes:
-- Set GOOGLE_OAUTH_CLIENT_ID and optionally GOOGLE_OAUTH_CLIENT_SECRET and GOOGLE_OAUTH_REDIRECT_URI for OAuth demo flows.
-- Do not commit secrets to the repository; use environment variables or a secrets manager.
-
-
-- Export: Streaming export endpoints for infographic images (PNG/SVG) implemented for demo mode (src/leet_apps/api/sessions.py). Returns a small placeholder PNG or an SVG payload; in production this should stream from object storage.
+- Search: Added caching (TTL) and per-client rate limiting to the mock search endpoint (/api/search). Cache TTL is 10 minutes and rate limit default is 10 requests per 60s window. Utility endpoint to clear cache for testing is available at POST /api/search/cache/clear.
 ## Getting Started
 
 ### Prerequisites

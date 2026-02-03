@@ -1,18 +1,8 @@
 {
   "todos": [
     {
-      "id": "export-infographic-streaming",
-      "content": "export_infographic_streaming",
-      "status": "completed",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": "main#feature#export_infographic_streaming"
-    },
-    {
-      "id": "scope",
-      "content": "Scope",
+      "id": "purpose",
+      "content": "Purpose",
       "status": "completed",
       "background": null,
       "dependencies": [],
@@ -21,8 +11,23 @@
       "branch": null
     },
     {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      "id": "implement-search-ingest-and-caching-strategy",
+      "content": "Implement search ingest and caching strategy",
+=======
       "id": "scope",
       "content": "Scope",
+>>>>>>> Stashed changes
+=======
+      "id": "scope",
+      "content": "Scope",
+>>>>>>> Stashed changes
+=======
+      "id": "scope",
+      "content": "Scope",
+>>>>>>> Stashed changes
       "status": "completed",
       "background": null,
       "dependencies": [],

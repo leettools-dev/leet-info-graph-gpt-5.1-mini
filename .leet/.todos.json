@@ -1,64 +1,6 @@
 {
   "todos": [
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "id": "purpose",
-      "content": "Purpose",
-=======
-=======
->>>>>>> Stashed changes
-      "id": "input-natural-language-research-prompt",
-      "content": "Input: natural-language research prompt",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "output-generated-infographic-image-metadata-supporting-sources-and-a-saved-research-session",
-      "content": "Output: generated infographic (image + metadata), supporting sources, and a saved \u201cresearch session\u201d",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "core-oauth-login-chat-ui-web-search-summarization-infographic-generation-history-browsing",
-      "content": "Core: OAuth login, chat UI, web search + summarization + infographic generation, history browsing",
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "users",
-      "content": "Users",
->>>>>>> Stashed changes
-      "status": "pending",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
-      "id": "scope",
-      "content": "Scope",
-      "status": "completed",
-      "background": null,
-      "dependencies": [],
-      "suggested_solutions": [],
-      "goal_id": null,
-      "branch": null
-    },
-    {
       "id": "input-natural-language-research-prompt",
       "content": "Input: natural-language research prompt",
       "status": "pending",
@@ -89,22 +31,76 @@
       "branch": null
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
-      "content": "F2: Chat UI to submit research prompts and follow-ups",
-      "status": "in_progress",
+      "id": "users",
+      "content": "Users",
+      "status": "pending",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": "main#feature#history_ui"
+      "branch": null
     },
     {
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+      "id": "students-and-educators",
+      "content": "Students and educators",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "product-market-researchers",
+      "content": "Product/market researchers",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "knowledge-workers-who-need-quick-visual-summaries",
+      "content": "Knowledge workers who need quick visual summaries",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "requirements",
+      "content": "Requirements",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "1-functional",
+      "content": "1 Functional",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
+      "id": "f1-gmail-oauth-login-and-account-management",
+      "content": "F1: Gmail OAuth login and account management",
+      "status": "pending",
+      "background": null,
+      "dependencies": [],
+      "suggested_solutions": [],
+      "goal_id": null,
+      "branch": null
+    },
+    {
       "id": "f3-web-search-pipeline-to-collect-sources-show-source-list",
       "content": "F3: Web search pipeline to collect sources; show source list",
       "status": "pending",
@@ -137,8 +133,6 @@
     {
       "id": "f6-history-view-with-filters-topic-date-tags-and-detail-page",
       "content": "F6: History view with filters (topic, date, tags) and detail page",
-<<<<<<< Updated upstream
-=======
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -369,12 +363,20 @@
     {
       "id": "phase-1-oauth-login-chat-ui-basic-backend-crud-search-source-list",
       "content": "Phase 1: OAuth login, chat UI, basic backend CRUD, search + source list",
+<<<<<<< Updated upstream
+      "status": "pending",
+=======
       "status": "in_progress",
+>>>>>>> Stashed changes
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
+<<<<<<< Updated upstream
+      "branch": null
+=======
       "branch": "main#feature#export_session_and_infographic"
+>>>>>>> Stashed changes
     },
     {
       "id": "phase-2-infographic-generation-mvp-static-template-charts-session-save",
@@ -529,7 +531,7 @@
     {
       "id": "implement-search-ingest-and-caching-strategy",
       "content": "Implement search ingest and caching strategy",
-      "status": "pending",
+      "status": "completed",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
@@ -548,7 +550,7 @@
     },
     {
       "id": "ask-summarize-current-ev-market-trends",
-      "content": "Ask: \u201cSummarize current EV market trends\u201d",
+      "content": "Ask: \"Summarize current EV market trends\"",
       "status": "pending",
       "background": null,
       "dependencies": [],
@@ -575,20 +577,19 @@
       "suggested_solutions": [],
       "goal_id": null,
       "branch": null
+<<<<<<< Updated upstream
+=======
     },
     {
       "id": "f2-chat-ui-to-submit-research-prompts-and-follow-ups",
       "content": "F2: Chat UI to submit research prompts and follow-ups",
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       "status": "in_progress",
       "background": null,
       "dependencies": [],
       "suggested_solutions": [],
       "goal_id": null,
-      "branch": "main#feature#history_ui"
+      "branch": null
+>>>>>>> Stashed changes
     }
   ]
 }

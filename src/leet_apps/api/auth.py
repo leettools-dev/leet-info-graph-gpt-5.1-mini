@@ -24,7 +24,9 @@ async def login():
         raise HTTPException(status_code=400, detail="Missing configuration: set GOOGLE_OAUTH_CLIENT_ID environment variable")
 
     redirect_uri = os.environ.get("GOOGLE_OAUTH_REDIRECT_URI", "http://localhost:8000/api/auth/callback")
-    scope = "openid email profile"
+    # Default scopes: OpenID Connect for identity (id token), plus email and profile
+    # For Gmail-specific features, set GOOGLE_OAUTH_SCOPES env var to a comma-separated list
+    scope = os.environ.get("GOOGLE_OAUTH_SCOPES", "openid email profile")
     params = {
         "client_id": client_id,
         "response_type": "code",

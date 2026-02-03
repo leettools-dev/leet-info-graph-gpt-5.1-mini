@@ -1,14 +1,14 @@
 from datetime import datetime
-from typing import List, Optional, Dict, Any
-from fastapi import APIRouter, HTTPException, Body, Query
-from pydantic import BaseModel, Field
 import uuid
+from typing import Dict, Any, List, Optional
+from fastapi import APIRouter, HTTPException, Query, Response, Body
+from pydantic import BaseModel, Field
 
 router = APIRouter(prefix="/api/infographics")
 
-# In-memory store for infographics and image bytes
-_images: Dict[str, bytes] = {}
+# In-memory stores for demo purposes
 _infographics: Dict[str, Dict[str, Any]] = {}
+_images: Dict[str, bytes] = {}
 
 
 class Stat(BaseModel):
@@ -17,11 +17,13 @@ class Stat(BaseModel):
 
 
 class InfographicCreate(BaseModel):
-    session_id: Optional[str]
-    title: str
+    session_id: Optional[str] = None
+    title: Optional[str] = None
+    prompt: Optional[str] = None
     stats: List[Stat] = Field(default_factory=list)
     bullets: List[str] = Field(default_factory=list)
-    template: Optional[str] = "basic_v1"
+    sources: List[Dict[str, Any]] = Field(default_factory=list)
+    template: Optional[str] = "simple_v1"
 
 
 class InfographicMeta(BaseModel):
@@ -32,105 +34,104 @@ class InfographicMeta(BaseModel):
     created_at: datetime
 
 
-def _create_svg(title: str, stats: List[Dict[str, Any]], bullets: List[str]) -> str:
-    """
-    Very small deterministic SVG generator for demo purposes.
-    Lays out title, a simple bar chart for stats, and bullets.
-    """
-    width = 800
-    height = 420 + max(0, len(bullets) * 20)
-    bg = "#ffffff"
-    title_y = 40
-    svg_parts = [f'<?xml version="1.0" encoding="UTF-8"?>',
-                 f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',
-                 f'<rect width="100%" height="100%" fill="{bg}"/>',
-                 f'<text x="40" y="{title_y}" font-family="Arial" font-size="24" fill="#111">{title}</text>']
+SVG_TEMPLATE = """<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'>
+  <style>
+    .title {{ font: bold 24px sans-serif; }}
+    .body {{ font: 14px sans-serif; }}
+    .source {{ font: 12px sans-serif; fill: #555; }}
+  </style>
+  <rect width='100%' height='100%' fill='#ffffff' />
+  <text x='40' y='60' class='title'>Infographic: {title}</text>
+  <text x='40' y='100' class='body'>Prompt: {prompt}</text>
+  <g transform='translate(40,140)'>
+    {bullets}
+  </g>
+  <g transform='translate(40,420)'>
+    <text class='source'>Sources:</text>
+    {sources}
+  </g>
+</svg>
+"""
 
-    # Draw simple bars for stats
-    if stats:
-        max_val = max(s.get('value', 0) for s in stats) or 1
-        bar_x = 40
-        bar_y = 80
-        bar_height = 20
-        gap = 10
-        for i, s in enumerate(stats):
-            label = s.get('label', '')
-            val = float(s.get('value', 0))
-            bar_width = int((width - 160) * (val / max_val))
-            y = bar_y + i * (bar_height + gap)
-            svg_parts.append(f'<text x="{bar_x}" y="{y+14}" font-family="Arial" font-size="12" fill="#333">{label}</text>')
-            svg_parts.append(f'<rect x="{bar_x+200}" y="{y}" width="{bar_width}" height="{bar_height}" fill="#4f8ef7" rx="4"/>')
-            svg_parts.append(f'<text x="{bar_x+210+bar_width}" y="{y+14}" font-family="Arial" font-size="12" fill="#111">{val:.1f}</text>')
+MIN_PNG_BYTES = (
+    b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x06\x00\x00\x00\x1f\x15\xc4\x89"
+    b"\x00\x00\x00\x0cIDATx\x9cc``\x00\x00\x00\x02\x00\x01\xe2!\xbc\x33\x00\x00\x00\x00IEND\xaeB`\x82"
+)
 
-    # Bullets
-    bullets_x = 40
-    bullets_y = 80 + max(0, len(stats)) * (bar_height + gap) + 40
-    for idx, b in enumerate(bullets):
-        y = bullets_y + idx * 20
-        svg_parts.append(f'<text x="{bullets_x}" y="{y}" font-family="Arial" font-size="14" fill="#222">• {b}</text>')
 
-    svg_parts.append('</svg>')
-    return '\n'.join(svg_parts)
+def _render_bullets(sources: List[Dict[str, Any]]) -> str:
+    lines = []
+    y = 0
+    for s in sources[:6]:
+        lines.append(f"<text x='0' y='{y}' class='body'>- {s.get('title','')}: {s.get('snippet','')}</text>")
+        y += 24
+    return "\n    ".join(lines)
+
+
+def _render_sources(sources: List[Dict[str, Any]]) -> str:
+    lines = []
+    x = 0
+    y = 20
+    for s in sources[:4]:
+        lines.append(f"<text x='{x}' y='{y}' class='source'>{s.get('url')}</text>")
+        y += 16
+    return "\n    ".join(lines)
+
+
+def generate_svg(title: str, prompt: str, sources: List[Dict[str, Any]]) -> str:
+    bullets = _render_bullets(sources)
+    sources_block = _render_sources(sources)
+    return SVG_TEMPLATE.format(title=title, prompt=prompt, bullets=bullets, sources=sources_block)
 
 
 @router.post("/generate", response_model=InfographicMeta)
-async def generate_infographic(payload: InfographicCreate = Body(...)):
-    if not payload.title or not payload.title.strip():
-        raise HTTPException(status_code=400, detail="title is required")
+async def generate(info: InfographicCreate = Body(...)):
+    # Accept either title+stats or prompt+sources and create a simple SVG
+    if info.title:
+        title = info.title
+    elif info.prompt:
+        title = (info.prompt[:40] + "...") if len(info.prompt) > 40 else info.prompt
+    else:
+        title = "Untitled"
 
-    info_id = str(uuid.uuid4())
-    svg = _create_svg(payload.title, [s.dict() for s in payload.stats], payload.bullets)
-    svg_bytes = svg.encode("utf-8")
+    prompt = info.prompt or (info.title or "")
 
-    _images[info_id] = svg_bytes
-    meta = {
-        "id": info_id,
-        "session_id": payload.session_id,
-        "image_url": f"/api/infographics/{info_id}/image",
-        "layout_meta": {"template": payload.template},
-        "created_at": datetime.utcnow(),
+    svg = generate_svg(title=title, prompt=prompt, sources=info.sources)
+
+    infographic_id = str(uuid.uuid4())
+    created_at = datetime.utcnow()
+    image_url = f"/api/infographics/{infographic_id}/image?format=svg"
+    layout_meta = {"template": info.template, "source_count": len(info.sources)}
+
+    _infographics[infographic_id] = {
+        "id": infographic_id,
+        "session_id": info.session_id,
+        "svg": svg,
+        "layout_meta": layout_meta,
+        "created_at": created_at,
     }
-    _infographics[info_id] = meta
-    return meta
 
+    _images[infographic_id] = svg.encode("utf-8")
 
-@router.get("/{infographic_id}", response_model=InfographicMeta)
-async def get_infographic(infographic_id: str):
-    meta = _infographics.get(infographic_id)
-    if not meta:
-        raise HTTPException(status_code=404, detail="Infographic not found")
-    return meta
-
-
-from fastapi.responses import StreamingResponse
-import io
-import base64
+    return InfographicMeta(id=infographic_id, session_id=info.session_id, image_url=image_url, layout_meta=layout_meta, created_at=created_at)
 
 
 @router.get("/{infographic_id}/image")
-async def get_infographic_image(infographic_id: str, format: str = Query("svg", regex="^(svg|png)$")):
-    # For demo, we have SVG bytes stored. Support SVG streaming and provide a safe PNG placeholder for PNG requests.
-    svg_bytes = _images.get(infographic_id)
-    if not svg_bytes:
-        raise HTTPException(status_code=404, detail="Infographic image not found")
+async def get_image(infographic_id: str, format: str = Query("svg", regex="^(svg|png)$")):
+    obj = _infographics.get(infographic_id)
+    if not obj:
+        raise HTTPException(status_code=404, detail="Infographic not found")
+
     if format == "svg":
-        return StreamingResponse(io.BytesIO(svg_bytes), media_type="image/svg+xml")
+        return Response(content=obj["svg"], media_type="image/svg+xml")
     else:
-        # Return a 1x1 transparent PNG placeholder for demo purposes.
-        png_b64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
-        png_bytes = base64.b64decode(png_b64)
-        return StreamingResponse(io.BytesIO(png_bytes), media_type="image/png")
+        # Return a tiny PNG placeholder for demo purposes
+        return Response(content=MIN_PNG_BYTES, media_type="image/png")
 
 
-# Helper for other modules to create an infographic from a prompt/session
-async def create_from_prompt(session_id: str, prompt: str):
-    # Create a simple title and two mock stats derived deterministically from prompt
-    title = f"{prompt.strip().capitalize()} - Summary"
-    # create deterministic numeric values using hash of prompt
-    h = abs(hash(prompt))
-    stat1 = {"label": "Key stat A", "value": float((h % 100) + 10)}
-    stat2 = {"label": "Key stat B", "value": float(((h // 2) % 100) + 5)}
-    bullets = [f"Summary point about {prompt.split()[0] if prompt.split() else 'topic'}.", "Further context and references included."]
-    payload = InfographicCreate(session_id=session_id, title=title, stats=[Stat(**stat1), Stat(**stat2)], bullets=bullets)
-    meta = await generate_infographic(payload)
-    return meta
+# Internal helper for other modules
+async def create_infographic_for_session(session_id: str, prompt: str, sources: List[Dict[str, Any]]) -> Dict[str, Any]:
+    payload = InfographicCreate(session_id=session_id, prompt=prompt, sources=sources)
+    res = await generate(payload)
+    return res.dict()
